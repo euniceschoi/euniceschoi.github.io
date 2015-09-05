@@ -13,22 +13,88 @@ body {
 }
 
 .container {
-    background-color:#ddbd93;
+    /*background-image:url("/imgs/Small_blue_flower.jpg");
+    /*background-color: #cccccc;*/*/
     height:600px;
-    margin-top: -70px;
+    margin: 0 auto 0 auto;
+    width:1000px;
+    position:relative;
+    overflow:hidden;
 }
+
+/*.main {
+    margin: 0px auto 0 auto;
+    overflow:hidden;
+}*/
+
+.container img {
+    position:relative;
+    left:auto;
+    right:auto;
+    left:-85px;
+    top:-65px;
+}
+
+
+/*.welcome{
+    display:block;
+    top:500px;
+    background-color:white;
+    left:200px;
+}*/
+
+/*.text h2{
+    position:absolute;
+    display:block;
+    color: black;
+    font: 14px Sans-Serif;
+    z-index:5;
+}*/
 
 nav {
     text-align:center;
     margin-top: 15px;
-    color:black;
-}
-.soc {
-    overflow:hidden;
-    margin:0; padding:0;
-    list-style:none;
+    background-color:#80AEFF;
+    height:45px;
+    width:1000px;
+    display:block;
+    margin: 15px auto 0 auto;
+    border-bottom: 1px solid #3B76DE;
+    font-family: Arial;
+    font-size:medium;
 }
 
+a:link{
+    text-decoration: none;
+    color: white;
+    padding-right:20px;
+    display:inline-block;
+    margin-top:15px;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color:#4A4E56;
+}
+
+.soc {
+    overflow:hidden;
+    margin:auto;
+    padding:0;
+    list-style:none;
+    text-align:center;
+}
+
+.soc img {
+    width:50px;
+    height:50px;
+    margin:auto;
+    position:static;
+
+}
 .soc li {
     display:inline-block;
     *display:inline;
@@ -43,4 +109,15 @@ nav {
 
 .soc-icon-last{
     margin:0 !important;
+}
+
+.bottom {
+    position:relative;
+    bottom:60px;
+    background-color:#55EEA1;
+    height:90px;
+    width:1000px;
+    display:block
+    border-top:3px solid white;
+    margin: 0px auto 0px auto;
 }
