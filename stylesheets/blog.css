@@ -1,0 +1,40 @@
+.blog-container {
+  width: 1000px;
+  height:887px;
+  margin:-25px auto;
+  color:black;
+  background-color:#EBF1FF;
+  text-align:center;
+}
+
+h1 {
+  text-align:center;
+  padding-top:30px;
+  font-family:Arial;
+}
+
+div {
+  font-size:large;
+  font-family:Arial;
+}
+
+.blog-link:link{
+    text-decoration: none;
+    color: black;
+    padding-right:25px;
+    display:inline-block;
+    margin-top:15px;
+}
+
+.blog-link:visited{
+    color: black;
+}
+
+.blog-link:hover{
+    color:#80AEFF;
+    font-weight:bold;
+}
+
+ul {
+  list-style-type: none;
+}
