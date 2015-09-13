@@ -116,10 +116,10 @@ a:hover{
 }
 
 .bottom {
-    position:relative;
+    position:fixed;
     bottom:0px;
-    background-color:#55EEA1;
-    height:500px;
+    background-color:#d8f1f4;
+    height:470px;
     width:1000px;
     display:block
     border-top:3px solid white;
@@ -127,5 +127,6 @@ a:hover{
     margin-left: auto;
     left:0;
     right:0;
+    border-bottom: 90px solid #55eea1;
     /*margin: 0px auto 0px auto;*/
 }
