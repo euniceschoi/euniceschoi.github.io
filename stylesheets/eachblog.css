@@ -22,3 +22,17 @@ p {
   padding-left:60px;
   padding-right:60px;
 }
+
+.source-link:link{
+    font-weight: bold;
+    color: #55EEA1;
+}
+
+.source-link:visited{
+    color: #55EEA1;
+}
+
+.source-link:hover{
+    color:black;
+    font-weight:bold;
+}

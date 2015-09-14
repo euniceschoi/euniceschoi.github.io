@@ -127,3 +127,17 @@ a:hover{
     right:0;
     /*margin: 0px auto 0px auto;*/
 }
+
+.source-link:link{
+    font-weight: bold;
+    color: #55EEA1;
+}
+
+.source-link:visited{
+    color: #55EEA1;
+}
+
+.source-link:hover{
+    color:black;
+    font-weight:bold;
+}
