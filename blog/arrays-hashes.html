@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+  <title>DBC Blogs</title>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/eachblog.css">
+  </head>
+
+<body>
+  <header>
+    <div class="banner">
+      <img style="width:180px; height:170px" src= "../imgs/flowerbanner2.png" alt="Image of my name">
+    </div>
+
+    <nav>
+      <a href="../index.html">HOME</a>
+      <a href="../about-me.html">ABOUT ME</a>
+      <a href="../blog.html">BLOG</a>
+      <a href="../portfolio.html">PORTFOLIO</a>
+      <a href="../contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+
+  <div class="blog-container">
+    <h1>Ruby Fundamentals</h1>
+    <h2>[Arrays] vs. {Hashes}</h2>
+    <h4>September 13, 2015</h4>
+
+    <p>
+      Which do you think is harder: learning Ruby or teaching a class of kindergarteners? I think they are on par, but in this blog, I'd like you to do both at once in order to understand arrays and hashes.
+    </p>
+    <p>
+      Arrays and hashes are both <b>indexed collections</b>. Collection means that they can store objects such as strings and integers. Indexed means that they have "keys" to access each of their stored objects. Like a key to a classroom door, you can only access an object in an array or a hash with its indexed key! Now let's unlock the door to your classroom and prepare for your first kindegarten lesson. First thing on the list: get to know your students' names!
+    </p>
+    <img style="width:60%; height:100px" src="http://catholicformationicsp.com/wp-content/uploads/2015/07/cartoon-kids-header.gif">
+    <hr>
+    <h3>[Arrays]</h3>
+    <p>
+      Let's create an array with your class roster. You could call your array "students" and store all of your students' names. It would look  something like this:
+
+      <pre>
+      students = ['James', 'Peter', 'Emily', 'Sam', 'Brian', 'Karen', 'Claire']
+      </pre>
+
+      Remember how I said that arrays and hashes are indexed? Arrays are unique in that they are integer-indexed, starting with 0. In the array above, an index of 0 would indicate James. An index of 1 would represent Peter, an index of 2 would represent Emily, so on and so forth. To access each element in your array, you need to type the array name next to the index integer in brackets. For instance, you would type the following code to access the first name on the list:
+
+      <pre>
+        students[0]
+      </pre>
+
+
+      Arrays have many useful built in methods. For instance, you could alphabetize the students names by using:
+      <pre> students.sort </pre> or even find the number of students in your class by typing: <pre> students.count </pre>. You can even have empty arrays!
+      <pre>students = []</pre>
+    </p>
+    <hr>
+    <h3>{Hashes}</h3>
+    <p>Now that you are familiar with your students' names, why don't we assign your students their cubbies?</p>
+
+    <img style="width:500px; height:400px" src="http://3.bp.blogspot.com/-2YPmEGDH3V8/UCaDt7P9AEI/AAAAAAAAAJo/wvbDusib6Uo/s1600/cubbies.JPG">
+    <p>
+      Since your cubbies have number labels on them, why don't we just assign each student a number? Let's create a hash called "cubbies_assignment" to do this job:
+          <pre>
+          cubbies_assignment = {
+            1 => 'James',
+            2 => 'Peter',
+            3 => 'Emily',
+            4 => 'Sam',
+            5 => 'Brian',
+            6 => 'Karen',
+            7 => 'Claire'
+          }
+          </pre>
+    </p>
+    <p>
+      As you can see, hashes are similar to arrays in that they store objects. The hash above stores your students' names along with their cubby numbers. So what makes hashes so different from arrays? One thing for sure, you can see that hashes use {braces} in stead of [brackets]. They also hold two objects for every entry: a key and a value. Earlier, arrays were integer-indexed starting from 0. Hashes, on the other hand, are indexed by the key you label them with. The left side of the "=>"" represents the key while the right side represents the value:
+      <pre> key => value </pre> In order to index each value you would type:
+
+      <pre>
+        hash_name[key]
+      </pre>
+      To index Karen, you would input:
+      <pre>
+        cubbies_assignment[6]
+      </pre>
+    <p>
+      Like arrays, hashes also have great build-in methods. To print just the keys of your hash, you can type:
+      <pre>cubbies_assignment.keys</pre>
+      => [1, 2, 3, 4, 5, 6, 7]
+    </p>
+    <p>To get the number of cubbies, you could type:
+      <pre> cubbies_assignment.length</pre>
+    </p>
+    <p>What if you want to assign a new student a cubby? You could add to an existing hash by typing:
+      <pre>hash[:8] = 'Diane'</pre>
+    </p>
+    <hr>
+    <p>
+      In your classroom, hashes and arrays were used for storing important data: students' names and cubby numbers. In programming, they are used in the same way and are useful for holding complex data structures. I hope you found this blog helpful for understanding arrays and hashes!
+    </p>
+
+
+  </div>
+
+  <!-- <aside>
+    <h1>Other Entries</h1>
+      <ul>
+        <li>
+          <a href="/c1-chefs-kitchen.html">My Impression of DBC Thus Far</a>
+        </li>
+  </aside> -->
+
+  <footer class="bottom">
+      <ul class="soc">
+        <li><a href="https://twitter.com/euniceesc"><img src="../imgs/twitter.png" alt="Twitter Icon"></a></li>
+        <li><a href="https://www.facebook.com/EuniceSChoi"><img src="../imgs/facebook.png" alt="Facebook Icon"></a></li>
+        <li><a href="https://plus.google.com/u/0/113732345844394468529"><img src="../imgs/googleplus.png" alt="Google Icon"></a></li>
+        <li><a href="https://www.linkedin.com/in/euniceschoi"><img src="../imgs/linkedin.png" alt="Linked In Icon"></a></li>
+        <li><a href="mailto:euniceschoi93@gmail.com"><img src="../imgs/email.png" alt="GitHub Icon"></a></li>
+      </ul>
+  </footer>
+
+
+</body>
+
+</html>
