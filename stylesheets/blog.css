@@ -1,6 +1,6 @@
 .blog-container {
   width: 1000px;
-  height:887px;
+  height:550px;
   margin:-25px auto;
   color:black;
   background-color:#d8f1f4;
@@ -37,4 +37,29 @@ div {
 
 ul {
   list-style-type: none;
+}
+
+.contact {
+   text-decoration: none;
+    color: black;
+    padding-right:25px;
+    display:block;
+    margin-top:15px;
+}
+
+.contact:link {
+  text-decoration: none;
+    color: black;
+    padding-right:25px;
+    display:inline-block;
+    margin-top:15px;
+}
+
+.contact:visited{
+    color: black;
+}
+
+.contact:hover{
+    color:#80AEFF;
+    font-weight:bold;
 }
