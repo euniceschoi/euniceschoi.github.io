@@ -36,3 +36,14 @@ p {
     color:black;
     font-weight:bold;
 }
+
+pre {
+ background: #4E5052;
+ color: #AAD2CB
+ font-family: Monaco, courier;
+ font-size: 1.15em;
+ border-radius: 10px;
+ margin: 0;
+ padding: 10px;
+ width: 95%;
+}
