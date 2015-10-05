@@ -31,21 +31,103 @@
       <p>
         Here is a list of ways to loop in Ruby:
       </p>
-      <ul>
-        <li>while loops</li>
-        <li>for loops</li>
-        <li>until loops</li>
-        <li>#times method</li>
-        <li>#each method</li>
-        <li>#each_with_index method</li>
-      </ul>
+      <div class="list">
+        <ul>
+          <li>while loops</li>
+          <li>for loops</li>
+          <li>until loops</li>
+          <li>#times method</li>
+          <li>#each method</li>
+          <li>#each_with_index method</li>
+        </ul>
+      </div>
       <p>
         And, here is a list for JavaScript:
       </p>
+      <div class="list">
       <ul>
         <li>while loops</li>
         <li>for loops</li>
       </ul>
+      </div>
+      <p>
+        As you can see, there are quite many ways to create loops in Ruby. The <i>while</i> statement creates a loop by executing code while a conditional is <i>true</i>:
+      </p>
+      <pre>
+        i = 0
+        while i < 5
+        p “While looping in Ruby!”
+        i += 1
+        end
+      </pre>
+      <p>
+        You can see above that the code prints "While looping in Ruby!" <i>while</i> the counter variable we set, i, is less than 5. As long as that is <i>true</i>, i will count up and every time it does, print the statement. An until loop will iterate until a conditional is true and a for loop executes code once for each element in an expression.
+      </p>
+      <p>
+        Ruby also has several built-in methods that are great for creating loops. The #times method is useful for simply repeating a code a several number of times:
+      </p>
+      <pre>
+        5.times {p “Hello!”}
+
+        > Hello!
+          Hello!
+          Hello!
+          Hello!
+          Hello!
+      </pre>
+      <p>
+        Ruby's <i>each </i> and <i>each_with_index</i> methods are useful for looping through data structures.
+      </p>
+      <pre>
+        array = [ "Eunice", "Sam", "Sarah" ]
+        array.each do |x|
+          puts x
+        end
+
+        > Eunice
+          Sam
+          Sarah
+      </pre>
+      <p>
+        The each method above goes through each element in the array, which is a name, and puts it on the screen. Each_with_index performs the same thing, except you can also access the index.
+      </p>
+      <p>
+        In JavaScript, there are for loops and while loops. The while loops work just the way they do in Ruby, but the syntax is different. Here, we print a statement while the condition (num <= 5) is true:
+      </p>
+      <pre>
+        var num = 1;
+
+        while (num <= 5) {
+        console.log(“While looping in JavaScript!”);
+        n += 1
+        }
+      </pre>
+      <p>
+        For loops in JavaScript loops through a code block a number of times. They take 3 statements:
+      </p>
+      <pre>
+        for(1 ; 2 ; 3) {
+          code to execute
+      }
+      </pre>
+      <div class="list">
+      <ul>
+          <li>1. initiate variable for when to start the loop </li>
+          <li>2. condition for looping</li>
+          <li>3. execute after each loop (usually to increase intial variable)</li>
+      </ul>
+      </div>
+      <pre>
+        for (var i = 0; i < 5; i++) {
+          console.log("For looping in JavaScript!")
+        }
+      </pre>
+      <p>
+        The code block above will print "For looping in JavaScript!" 5 times, once for every loop, while i is less than 5. i will increase by 1 after each loop, eventually leading to the condition being false and no longer executing the code.
+      </p>
+      <p>
+        As you can see, looping in Ruby mostly differs from looping in JavaScript in terms of the syntax. Ruby also has built in methods that JavaScript does not have. Overall, both langauges can be used to create powerful loops. I hope this gave you some basic knowledge on the two!
+      </p>
   </div>
 
   <!-- <aside>
