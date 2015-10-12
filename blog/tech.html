@@ -27,10 +27,68 @@
     <h4>October 11, 2015</h4>
 
       <p>
-        In programming, regular expressions are used to parse through strings  In programming, a regular expressions, or "regex," is a sequence of characters that
+        In programming, regular expressions are a pattern matching standard that allow you to match strings with patterns. They are mainly used for extracting and replacing strings. Regular expressions can be used to pull out information, like email addresses, from long files and can save A LOT of time. Imagine how long it would take to extract all email addresses one by one from a jumpled file of 2,000 employees!
       </p>
+      <p>
+        If you think about text, each letter and string is a character. When using regular expressions, you are writing pattern to match a certain sequence of characters. In order to match email addresses, for example, you would be writing a pattern that matches the ____@____.com pattern. Regular In programming, a regular expression, or "regex," is a sequence of symbols that match characters. The simplest form of a regex uses the exact characters to match as is. Regexes also match the first case found:
+      </p>
+      <pre>
 
-
+          <u>Regex</u>  <u>Matches</u>
+          abc    <b>abc</b>abcabc
+          234    1<b>234</b>5
+      </pre>
+      <p>
+        If you want to match several characters, you can use quantifiers. Let's look at some basics:
+      </p>
+      <ul style="list-style:none">
+        <li>* matches any number of what's before it, from zero to infinity</li>
+        <li>? matches zero or one</li>
+        <li>+ matches one or more</li>
+      </ul>
+      <pre>
+          <u>Regex</u> <u>Matches</u>
+          23*4  1<b>24</b>5, 1<b>234</b>5, 1<b>2334</b>5
+          23?4  1<b>24</b>5, 1<b>234</b>5
+          23+4  1<b>234</b>5, 1<b>2334</b>5
+      </pre>
+      <p>
+        Regexes are "greedy" by default as you can see here:
+      </p>
+      <pre>
+          <u>Regex</u> <u>Matches</u>
+          2*    1<b>2222</b>3
+      </pre>
+      <p>
+        Here are some common special characters for building regular expressions:
+      </p>
+      <pre>
+        .   The dot matches any single character.
+        \n  Matches a newline character (or CR+LF combination).
+        \t  Matches a tab (ASCII 9).
+        \d  Matches a digit [0-9].
+        \D  Matches a non-digit.
+        \w  Matches an alphanumberic character.
+        \W  Matches a non-alphanumberic character.
+        \s  Matches a whitespace character.
+        \S  Matches a non-whitespace character.
+        \   Use \ to escape special characters. For example, \. matches a dot, and \\
+            matches a backslash.
+        ^   Match at the beginning of the input string.
+        $   Match at the end of the input string.
+      </pre>
+      <p>You can also use character classes to group characters and match any character in that group: </p>
+      <pre>
+      [abc]   Match any of a, b, and c.
+      [a-z]   Match any character between a and z.
+      [^abc]  A caret ^ at the beginning indicates "not". In this case, match anything
+              other than a, b, or c.
+      [+*?.]  Most special characters have no meaning inside the square brackets. This
+              expression matches any of +, *, ? or the dot.
+      </pre>
+      <p>
+        There are many more concepts to regular expressions, but this is a good glimpse into the regexes you would use to match strings. Regular Expressions are language independent and used in many different programming environment. They allow programmers to parse and extract data with efficience!
+      </p>
   </div>
 
   <!-- <aside>
