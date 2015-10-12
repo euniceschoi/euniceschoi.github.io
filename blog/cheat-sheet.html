@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<head>
+  <title>Projects</title>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/eachblog.css">
+  </head>
+
+<body>
+  <header>
+    <div class="banner">
+      <img style="width:180px; height:170px" src= "../imgs/flowerbanner2.png" alt="Image of my name">
+    </div>
+
+    <nav>
+      <a href="../index.html">HOME</a>
+      <a href="../about-me.html">ABOUT ME</a>
+      <a href="../blog.html">BLOG</a>
+      <a href="../portfolio.html">PORTFOLIO</a>
+      <a href="../contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+
+  <div class="blog-container">
+    <h1>Cheat Sheet</h1>
+    <h2>Ruby Enumerables</h2>
+
+
+
+    <table border="1" style="width:100%">
+      <tr>
+        <th>Method</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td>map</td>
+        <td>
+          <p>
+            returns a new array after performing a block operation on each of the elements in the collection
+          </p>
+          <pre>
+            (1..4).map {|x| x+1}
+            #=> [2,3,4,5]
+          </pre>
+        </td>
+      </tr>
+      <tr>
+        <td>to_a</td>
+        <td>
+          <p>
+            Returns an array based on the argument passed into it
+          </p>
+          <pre>
+            (1..7).to_a
+            #=> [1,2,3,4,5,6,7]
+
+            { 'a'=>1, 'b'=>2, 'c'=>3 }.to_a
+            #=> [["a", 1], ["b", 2], ["c", 3]]
+          </pre>
+        </td>
+      </tr>
+      <tr>
+        <td>each</td>
+        <td>
+        <p>
+          Calls block once for each element in self, passing that element as a parameter
+        </p>
+          <pre>
+            a = [ "a", "b", "c" ]
+            a.each {|x| print x, " -- " }
+
+            #=> a -- b -- c --
+          </pre>
+        </td>
+      </tr>
+      <tr>
+        <td>each_with_index</td>
+        <td>
+        <p>
+          Yields all elements with their indices
+        </p>
+          <pre>
+            hash = Hash.new
+            %w(cat dog wombat).each_with_index { |item, index|
+              hash[item] = index
+            }
+
+            hash
+            #=> {"cat"=>0, "dog"=>1, "wombat"=>2}
+          </pre>
+        </td>
+      </tr>
+      <tr>
+        <td>each_slice</td>
+        <td>
+        <p>
+          Breaks collection into a group of n sized elements
+        </p>
+          <pre>
+            (1..9).each_slice(3) { |x| print x }
+            #=> [1, 2, 3][4, 5, 6][7, 8, 9]
+          </pre>
+        </td>
+      </tr>
+      <tr>
+        <td>include?(value)</td>
+        <td>
+        <p>
+          Returns true if any member of enum equals object
+        </p>
+          <pre>
+            array = [1,2,3,4] array.include?(4)
+            #=> true
+          </pre>
+        </td>
+      </tr>
+      <tr>
+        <td>sort</td>
+        <td>
+        <p>
+          Returns array sorted by <=> operator or by block
+        </p>
+          <pre>
+            a = [ "d", "a", "e", "c", "b" ]
+            a.sort
+            #=> ["a", "b", "c", "d", "e"]
+
+            a.sort {|x,y| y <=> x }
+            #=> ["e", "d", "c", "b", "a"]
+          </pre>
+        </td>
+      </tr>
+      <tr>
+        <td>grep</td>
+        <td>
+        <p>
+          Returns an array of every element in enum for which Pattern === element
+        </p>
+          <pre>
+            ["Test", "Foo", "Bar"].grep 'Foo'
+            #=> ["Foo"]
+          </pre>
+        </td>
+      </tr>
+      <tr>
+        <td>inject</td>
+        <td>
+        <p>
+          Easily allows users to add, multiply, subtract through each element of a collection
+        </p>
+          <pre>
+            (1..5).inject { |sum, element| sum + element }
+            #=>15
+          </pre>
+        </td>
+      </tr>
+    </table>
+
+
+
+  </div>
+
+  <!-- <aside>
+    <h1>Other Entries</h1>
+      <ul>
+        <li>
+          <a href="/c1-chefs-kitchen.html">My Impression of DBC Thus Far</a>
+        </li>
+  </aside> -->
+
+  <footer class="bottom">
+      <ul class="soc">
+        <li><a href="https://twitter.com/euniceesc"><img src="../imgs/twitter.png" alt="Twitter Icon"></a></li>
+        <li><a href="https://www.facebook.com/EuniceSChoi"><img src="../imgs/facebook.png" alt="Facebook Icon"></a></li>
+        <li><a href="https://plus.google.com/u/0/113732345844394468529"><img src="../imgs/googleplus.png" alt="Google Icon"></a></li>
+        <li><a href="https://www.linkedin.com/in/euniceschoi"><img src="../imgs/linkedin.png" alt="Linked In Icon"></a></li>
+        <li><a href="mailto:euniceschoi93@gmail.com"><img src="../imgs/email.png" alt="GitHub Icon"></a></li>
+      </ul>
+  </footer>
+
+
+</body>
+
+</html>
