@@ -1,115 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>DBC Blogs</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/eachblog.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eunice Choi - About</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
-  <header>
-    <div class="banner">
-      <img style="width:180px; height:170px" src= "../imgs/flowerbanner2.png" alt="Image of my name">
-    </div>
-    <nav>
-      <a href="../index.html">HOME</a>
-      <a href="../about-me.html">ABOUT ME</a>
-      <a href="../blog.html">BLOG</a>
-      <a href="../portfolio.html">PORTFOLIO</a>
-      <a href="../contact.html">CONTACT</a>
+
+    <div class="brand">Eunice Choi</div>
+    <div class="address-bar">Web Development Student | Dev BootCamp SF </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="../blog.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
-  </header>
 
-  <div class="blog-container">
-    <h1>Tech Topics</h1>
-    <h2>Intro to Regular Expressions</h2>
-    <h4>October 11, 2015</h4>
+     <div class="container">
 
-      <p>
-        In programming, regular expressions are a pattern matching standard that allow you to match strings with patterns. They are mainly used for extracting and replacing strings. Regular expressions can be used to pull out information, like email addresses, from long files and can save A LOT of time. Imagine how long it would take to extract all email addresses one by one from a jumpled file of 2,000 employees!
-      </p>
-      <p>
-        If you think about text, each letter and string is a character. When using regular expressions, you are writing pattern to match a certain sequence of characters. In order to match email addresses, for example, you would be writing a pattern that matches the ____@____.com pattern. Regular In programming, a regular expression, or "regex," is a sequence of symbols that match characters. The simplest form of a regex uses the exact characters to match as is. Regexes also match the first case found:
-      </p>
-      <pre>
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Intro to
+                        <strong>Regular Expressions</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <!-- <img class="img-responsive img-border img-full" src="img/slide-1.jpg" alt=""> -->
+                        <small>October 11, 2015</small>
+                     <p>
+                      In programming, regular expressions are a pattern matching standard that allow you to match strings with patterns. They are mainly used for extracting and replacing strings. Regular expressions can be used to pull out information, like email addresses, from long files and can save A LOT of time. Imagine how long it would take to extract all email addresses one by one from a jumpled file of 2,000 employees!
+                    </p>
+                    <p>
+                      If you think about text, each letter and string is a character. When using regular expressions, you are writing pattern to match a certain sequence of characters. In order to match email addresses, for example, you would be writing a pattern that matches the ____@____.com pattern. Regular In programming, a regular expression, or "regex," is a sequence of symbols that match characters. The simplest form of a regex uses the exact characters to match as is. Regexes also match the first case found:
+                    </p>
+                    <pre>
 
-          <u>Regex</u>  <u>Matches</u>
-          abc    <b>abc</b>abcabc
-          234    1<b>234</b>5
-      </pre>
-      <p>
-        If you want to match several characters, you can use quantifiers. Let's look at some basics:
-      </p>
-      <ul style="list-style:none">
-        <li>* matches any number of what's before it, from zero to infinity</li>
-        <li>? matches zero or one</li>
-        <li>+ matches one or more</li>
-      </ul>
-      <pre>
-          <u>Regex</u> <u>Matches</u>
-          23*4  1<b>24</b>5, 1<b>234</b>5, 1<b>2334</b>5
-          23?4  1<b>24</b>5, 1<b>234</b>5
-          23+4  1<b>234</b>5, 1<b>2334</b>5
-      </pre>
-      <p>
-        Regexes are "greedy" by default as you can see here:
-      </p>
-      <pre>
-          <u>Regex</u> <u>Matches</u>
-          2*    1<b>2222</b>3
-      </pre>
-      <p>
-        Here are some common special characters for building regular expressions:
-      </p>
-      <pre>
-        .   The dot matches any single character.
-        \n  Matches a newline character (or CR+LF combination).
-        \t  Matches a tab (ASCII 9).
-        \d  Matches a digit [0-9].
-        \D  Matches a non-digit.
-        \w  Matches an alphanumberic character.
-        \W  Matches a non-alphanumberic character.
-        \s  Matches a whitespace character.
-        \S  Matches a non-whitespace character.
-        \   Use \ to escape special characters. For example, \. matches a dot, and \\
-            matches a backslash.
-        ^   Match at the beginning of the input string.
-        $   Match at the end of the input string.
-      </pre>
-      <p>You can also use character classes to group characters and match any character in that group: </p>
-      <pre>
-      [abc]   Match any of a, b, and c.
-      [a-z]   Match any character between a and z.
-      [^abc]  A caret ^ at the beginning indicates "not". In this case, match anything
-              other than a, b, or c.
-      [+*?.]  Most special characters have no meaning inside the square brackets. This
-              expression matches any of +, *, ? or the dot.
-      </pre>
-      <p>
-        There are many more concepts to regular expressions, but this is a good glimpse into the regexes you would use to match strings. Regular Expressions are language independent and used in many different programming environment. They allow programmers to parse and extract data with efficience!
-      </p>
-  </div>
+                        <u>Regex</u>  <u>Matches</u>
+                        abc    <b>abc</b>abcabc
+                        234    1<b>234</b>5
+                    </pre>
+                    <p>
+                      If you want to match several characters, you can use quantifiers. Let's look at some basics:
+                    </p>
+                    <ul style="list-style:none">
+                      <li>* matches any number of what's before it, from zero to infinity</li>
+                      <li>? matches zero or one</li>
+                      <li>+ matches one or more</li>
+                    </ul>
+                    <pre>
+                        <u>Regex</u> <u>Matches</u>
+                        23*4  1<b>24</b>5, 1<b>234</b>5, 1<b>2334</b>5
+                        23?4  1<b>24</b>5, 1<b>234</b>5
+                        23+4  1<b>234</b>5, 1<b>2334</b>5
+                    </pre>
+                    <p>
+                      Regexes are "greedy" by default as you can see here:
+                    </p>
+                    <pre>
+                        <u>Regex</u> <u>Matches</u>
+                        2*    1<b>2222</b>3
+                    </pre>
+                    <p>
+                      Here are some common special characters for building regular expressions:
+                    </p>
+                    <pre>
+                      .   The dot matches any single character.
+                      \n  Matches a newline character (or CR+LF combination).
+                      \t  Matches a tab (ASCII 9).
+                      \d  Matches a digit [0-9].
+                      \D  Matches a non-digit.
+                      \w  Matches an alphanumberic character.
+                      \W  Matches a non-alphanumberic character.
+                      \s  Matches a whitespace character.
+                      \S  Matches a non-whitespace character.
+                      \   Use \ to escape special characters. For example, \. matches a dot, and \\
+                          matches a backslash.
+                      ^   Match at the beginning of the input string.
+                      $   Match at the end of the input string.
+                    </pre>
+                    <p>You can also use character classes to group characters and match any character in that group: </p>
+                    <pre>
+                    [abc]   Match any of a, b, and c.
+                    [a-z]   Match any character between a and z.
+                    [^abc]  A caret ^ at the beginning indicates "not". In this case, match anything
+                            other than a, b, or c.
+                    [+*?.]  Most special characters have no meaning inside the square brackets. This
+                            expression matches any of +, *, ? or the dot.
+                    </pre>
+                    <p>
+                      There are many more concepts to regular expressions, but this is a good glimpse into the regexes you would use to match strings. Regular Expressions are language independent and used in many different programming environment. They allow programmers to parse and extract data with efficience!
+                    </p>
+                </div>
+                    <hr>
+                </div>
 
-  <!-- <aside>
-      <h1>Other Entries</h1>
-        <ul>
-          <li>
-            <a href="/t1-git-blog.html">Git and GitHub</a>
-          </li>
-        </ul>
-  </aside> -->
+                <div class="col-lg-12 text-center">
+                    <ul class="pager">
+                        <li class="previous"><a href="#">&larr; Older</a>
+                        </li>
+                        <li class="next"><a href="#">Newer &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
+    </div>
+    <!-- /.container -->
 
-  <footer class="bottom">
-    <ul class="soc">
-      <li><a href="https://twitter.com/euniceesc"><img src="../imgs/twitter.png" alt="Twitter Icon"></a></li>
-      <li><a href="https://www.facebook.com/EuniceSChoi"><img src="../imgs/facebook.png" alt="Facebook Icon"></a></li>
-      <li><a href="https://plus.google.com/u/0/113732345844394468529"><img src="../imgs/googleplus.png" alt="Google Icon"></a></li>
-      <li><a href="https://www.linkedin.com/in/euniceschoi"><img src="../imgs/linkedin.png" alt="Linked In Icon"></a></li>
-      <li><a href="mailto:euniceschoi93@gmail.com"><img src="../imgs/email.png" alt="GitHub Icon"></a></li>
-    </ul>
-  </footer>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <ul class="soc">
+                        <li><a href="https://twitter.com/euniceesc"><img src="../img/twitter.png" alt="Twitter Icon"></a></li>
+                        <li><a href="https://www.facebook.com/EuniceSChoi"><img src="../img/facebook.png" alt="Facebook Icon"></a></li>
+                        <li><a href="https://plus.google.com/u/0/113732345844394468529"><img src="../img/googleplus.png" alt="Google Icon"></a></li>
+                        <li><a href="https://www.linkedin.com/in/euniceschoi"><img src="../img/linkedin.png" alt="Linked In Icon"></a></li>
+                        <li><a href="mailto:euniceschoi93@gmail.com"><img src="../img/email.png" alt="GitHub Icon"></a></li>
+                      </ul>
+                    <p><!-- Copyright &copy; Eunice Choi 2015 --></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 

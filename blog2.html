@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Eunice Choi - Home</title>
+    <title>Eunice Choi - Blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -78,77 +78,54 @@
 
         <div class="row">
             <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Technical & Cultural
+                        <strong>blogs</strong>
+                    </h2>
+                    <hr>
+                </div>
                 <div class="col-lg-12 text-center">
-                    <div id="carousel-example-generic" class="carousel slide">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators hidden-xs">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="img-responsive img-full" src="img/1.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/2.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/3.jpg" alt="">
-                            </div>
-                        </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="icon-prev"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="icon-next"></span>
-                        </a>
-                    </div>
-                    <h2 class="brand-before">
-                        <small></small>
+                    <!-- <img class="img-responsive img-border img-full" src="img/slide-1.jpg" alt=""> -->
+                    <h2>Enumerable #map
+                        <br>
+                        <small>September 20, 2015</small>
                     </h2>
-                    <h1 class="brand-name"><!-- Business Casual --></h1>
-                    <!-- <hr class="tagline-divider">
-                    <h2>
-                        <small>
-                            <strong>Welcome</strong>
-                        </small>
-                    </h2> -->
+                    <p> If you look up the definition of <b>enumerate</b> on Google, you will see that one of the definitions is: <b>"to mention (a number of things) one by one"</b>. In Ruby, an <b>enumerator</b> is a tool that is used to access each item, or element, in a collection, such as an array or hash.
+                    </p>
+
+                    <a href="blog/enumerable-methods.html" class="btn btn-default btn-lg">Read More</a>
+                    <hr>
                 </div>
-            </div>
-        </div>
-
-       <!--  <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">Hello
-                        <strong></strong>
+                <div class="col-lg-12 text-center">
+                    <!-- <img class="img-responsive img-border img-full" src="img/slide-2.jpg" alt=""> -->
+                    <h2>Lack of Diversity in the Tech Industry
+                        <br>
+                        <small>September 13, 2015</small>
                     </h2>
+                    <p>What John Boitnott says in his article, "8 Initiatives That Show Tech Wants to Solve its Diversity Problem,” is true. It really is no secret that the tech industry has a diversity problem. It’s a well known fact and the awareness is spreading fast especially now in this era of libertarianism. From “Girl Develop It” to even the hashtag #ilookLikeanEngineer, the attempts to fill in the gaps are increasing. However, I realized that the main focus towards increasing diversity in the tech bubble seems to be aimed towards the gender gap. As a woman entering the web development field, I even saw myself focusing on the concerns of entering the “brogrammer’s” world.</p>
+                    <a href="blog/issues-tech.html" class="btn btn-default btn-lg">Read More</a>
                     <hr>
-                    <img class="img-responsive img-border img-left" src="img/me.png" alt="">
-                    <hr class="visible-xs">
-
-                    <p>My name is Eunice, and I am a web development student at Dev Bootcamp. This site will expand as I learn new languages and frameworks. Please feel free to look around!</p>
-
                 </div>
-            </div>
-        </div> -->
-
-        <div class="row" >
-            <div class="box" style="background-color:#DA4791">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center" style="color:white">Hello and
-                        <strong>Welcome to my site</strong>
+                <div class="col-lg-12 text-center">
+                    <!-- <img class="img-responsive img-border img-full" src="img/slide-3.jpg" alt=""> -->
+                    <h2>[Arrays] vs. {Hashes}
+                        <br>
+                        <small>September 13, 2015</small>
                     </h2>
+                    <p>Which do you think is harder: learning Ruby or teaching a class of kindergarteners? I think they are equally challenging, but in this blog, I'd like you to do both at once in order to understand arrays and hashes.
+
+                    Arrays and hashes are both indexed collections. Collection means that they can store objects such as strings and integers. Indexed means that they have "keys" to access each of their stored objects. Like a key to a classroom door, you can only access an object in an array or a hash with its indexed key! Now let's unlock the door to your classroom and prepare for your first kindergarten lesson. First thing on the list: get to know your students' names.</p>
+                    <a href="blog/arrays-hashes.html" class="btn btn-default btn-lg">Read More</a>
                     <hr>
-                    <p></p>
-                    <p></p>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <ul class="pager">
+                        <li class="previous"><a href="blog3.html">&larr; Older</a>
+                        </li>
+                        <li class="next"><a href="blog1.html">Newer &rarr;</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -178,14 +155,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 3300 //changes the speed
-    })
-    </script>
-
 
 </body>
 

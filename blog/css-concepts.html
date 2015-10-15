@@ -1,115 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>DBC Blogs</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/eachblog.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eunice Choi - About</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
-  <header>
-    <div class="banner">
-      <img style="width:180px; height:170px" src= "../imgs/flowerbanner2.png" alt="Image of my name">
-    </div>
-    <nav>
-      <a href="../index.html">HOME</a>
-      <a href="../about-me.html">ABOUT ME</a>
-      <a href="../blog.html">BLOG</a>
-      <a href="../portfolio.html">PORTFOLIO</a>
-      <a href="../contact.html">CONTACT</a>
+
+    <div class="brand">Eunice Choi</div>
+    <div class="address-bar">Web Development Student | Dev BootCamp SF </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../blog1.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="../blog1.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
-  </header>
 
-  <div class="blog-container">
-    <h1>CSS 101</h1>
-    <h2>CSS Positioning: Static, Relative, Absolute, vs Fixed</h2>
-    <h4>September 6, 2015</h4>
+     <div class="container">
 
-      <p>
-        As a CSS novice, I found myself spending hours adjusting the positioning for the containers in my website. None of the book definitions of relative, absolute, fixed, and static positioning really made sense to me until I started playing around them myself, and even then, hours flew by. In this blog, I want to explain CSS positioning in a way that might help clear some confusion for another beginner like me. If you are interested, please keep reading!
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">CSS Positioning
+                        <strong>Static, Relative, Absolute vs Fixed</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <!-- <img class="img-responsive img-border img-full" src="img/slide-1.jpg" alt=""> -->
+                        <small>September 6, 2015</small>
+                     <p>
+                      As a CSS novice, I found myself spending hours adjusting the positioning for the containers in my website. None of the book definitions of relative, absolute, fixed, and static positioning really made sense to me until I started playing around them myself, and even then, hours flew by. In this blog, I want to explain CSS positioning in a way that might help clear some confusion for another beginner like me. If you are interested, please keep reading!
 
-        <figure>
+                      <figure>
 
-          <a href="http://www.virtuosimedia.com/dev/css/css-rounded-corners-menus"> <img src="http://www.virtuosimedia.com/includes/Files/Uploaded/Images/Articles/Content/css-positioning.jpg"></a>
-          <figcaption>Click Image for Source </figcaption>
-        </figure>
-      </p>
+                        <a href="http://www.virtuosimedia.com/dev/css/css-rounded-corners-menus"> <img src="http://www.virtuosimedia.com/includes/Files/Uploaded/Images/Articles/Content/css-positioning.jpg"></a>
+                        <figcaption>Click Image for Source </figcaption>
+                      </figure>
+                    </p>
 
-      <p>
-        <b>1. Let's start with static positioning:</b>
-      </p>
+                    <p>
+                      <b>1. Let's start with static positioning:</b>
+                    </p>
 
-      <p>
-        <pre>.container-1 {
-              position: static;
-              }
-        </pre>
+                    <p>
+                      <pre>.container-1 {
+                            position: static;
+                            }
+                      </pre>
 
-        Let's say we were to set container-1's positioning to static. Above is how you would write the CSS code. Static positioning will place the container at its default positioning. Just always remember that static equals default. The container will stay with the normal page flow and not move.
-      </p>
-      <p>
-        <b>2. Relative Positioning:</b>
-      </p>
-      <p>
-        <pre>.container-1 {
-              position: relative;
-              top: -100px;
-              left: -100px;
-              }
-        </pre>
+                      Let's say we were to set container-1's positioning to static. Above is how you would write the CSS code. Static positioning will place the container at its default positioning. Just always remember that static equals default. The container will stay with the normal page flow and not move.
+                    </p>
+                    <p>
+                      <b>2. Relative Positioning:</b>
+                    </p>
+                    <p>
+                      <pre>.container-1 {
+                            position: relative;
+                            top: -100px;
+                            left: -100px;
+                            }
+                      </pre>
 
-        Now you decided that you want to move container-1 elsewhere. Let's say you want to move it up 100 pixels and to the left 100 pixels. This is when relative positioning comes into play. By setting the position to relative, you are telling your container to move a certain number of pixels from its original position.
-      </p>
-      <p>
-        <b>3. Absolute Positioning:</b>
-      </p>
-        <pre>.container-1 {
-              position: absolute;
-              top: 0 px;
-              left: 0 px;
-              }
-        </pre>
+                      Now you decided that you want to move container-1 elsewhere. Let's say you want to move it up 100 pixels and to the left 100 pixels. This is when relative positioning comes into play. By setting the position to relative, you are telling your container to move a certain number of pixels from its original position.
+                    </p>
+                    <p>
+                      <b>3. Absolute Positioning:</b>
+                    </p>
+                      <pre>.container-1 {
+                            position: absolute;
+                            top: 0 px;
+                            left: 0 px;
+                            }
+                      </pre>
 
-        Let's say your container is actually the logo of your company, and you want it place in the top left corner of your website. You could use relative positioning, and figure out the number of pixels it would have to move from its original position to be in that corner. However, someone viewing your page through a bigger monitor screen may still not see your logo in the corner. This is when absolute positioning is useful. Absolute positioning will take your container out of the normal flow of the page and position it according to the edges of the entire scrollable page. By assigning the top and left to be 0 px, your container will absolutely ALWAYS be 0 pixels from the top and left of any page, allowing it to be stuck right on the corner. Absolute can be useless when you are not cornering an element since screen sizes vary.
-      <p>
-       <b> 4. So what if the parent element position is relative but the child element position is absolute?</b>
-      </p>
-      <p>
-        This will allow you to position the child element absolutely within the parent element. If your child element was an image while the parent element is a container, the image could be placed in the center of the parent element and will always stay in the center of the parent no matter what.
-      </p>
-      <p>
-        <b>5. Last but not least, Fixed Positioning:</b>
-      </p>
-      <p>
-        Fixed positioning is probably the easiest to understand. In fact, you can see a clear example of it right here on my blog post! If you look below, you can see my social media nav bar with my Twitter, Facebook, etc buttons. Now, try scrolling up and down my blog post. Do you notice that the bar always remains in the same position, or fixed? This is exactly what fixed positioning allows you to do. Fixed positioning will place your container at a certain spot and will always be in that spot no matter how far you scroll around.
-      </p>
-      <p>
-        Well, that's it for now! I hope this cleared some things up for you.
-      </p>
+                      Let's say your container is actually the logo of your company, and you want it place in the top left corner of your website. You could use relative positioning, and figure out the number of pixels it would have to move from its original position to be in that corner. However, someone viewing your page through a bigger monitor screen may still not see your logo in the corner. This is when absolute positioning is useful. Absolute positioning will take your container out of the normal flow of the page and position it according to the edges of the entire scrollable page. By assigning the top and left to be 0 px, your container will absolutely ALWAYS be 0 pixels from the top and left of any page, allowing it to be stuck right on the corner. Absolute can be useless when you are not cornering an element since screen sizes vary.
+                    <p>
+                     <b> 4. So what if the parent element position is relative but the child element position is absolute?</b>
+                    </p>
+                    <p>
+                      This will allow you to position the child element absolutely within the parent element. If your child element was an image while the parent element is a container, the image could be placed in the center of the parent element and will always stay in the center of the parent no matter what.
+                    </p>
+                    <p>
+                      <b>5. Last but not least, Fixed Positioning:</b>
+                    </p>
+                    <p>
+                      Fixed positioning is probably the easiest to understand. In fact, you can see a clear example of it right here on my blog post! If you look below, you can see my social media nav bar with my Twitter, Facebook, etc buttons. Now, try scrolling up and down my blog post. Do you notice that the bar always remains in the same position, or fixed? This is exactly what fixed positioning allows you to do. Fixed positioning will place your container at a certain spot and will always be in that spot no matter how far you scroll around.
+                    </p>
+                    <p>
+                      Well, that's it for now! I hope this cleared some things up for you.
+                    </p>
+                </div>
+                    <hr>
+                </div>
 
+                <div class="col-lg-12 text-center">
+                    <ul class="pager">
+                        <li class="previous"><a href="#">&larr; Older</a>
+                        </li>
+                        <li class="next"><a href="#">Newer &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-  </div>
+    </div>
+    <!-- /.container -->
 
-  <!-- <aside>
-      <h1>Other Entries</h1>
-        <ul>
-          <li>
-            <a href="/t1-git-blog.html">Git and GitHub</a>
-          </li>
-        </ul>
-  </aside> -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <ul class="soc">
+                        <li><a href="https://twitter.com/euniceesc"><img src="../img/twitter.png" alt="Twitter Icon"></a></li>
+                        <li><a href="https://www.facebook.com/EuniceSChoi"><img src="../img/facebook.png" alt="Facebook Icon"></a></li>
+                        <li><a href="https://plus.google.com/u/0/113732345844394468529"><img src="../img/googleplus.png" alt="Google Icon"></a></li>
+                        <li><a href="https://www.linkedin.com/in/euniceschoi"><img src="../img/linkedin.png" alt="Linked In Icon"></a></li>
+                        <li><a href="mailto:euniceschoi93@gmail.com"><img src="../img/email.png" alt="GitHub Icon"></a></li>
+                      </ul>
+                    <p><!-- Copyright &copy; Eunice Choi 2015 --></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-  <footer class="bottom">
-    <ul class="soc">
-      <li><a href="https://twitter.com/euniceesc"><img src="../imgs/twitter.png" alt="Twitter Icon"></a></li>
-      <li><a href="https://www.facebook.com/EuniceSChoi"><img src="../imgs/facebook.png" alt="Facebook Icon"></a></li>
-      <li><a href="https://plus.google.com/u/0/113732345844394468529"><img src="../imgs/googleplus.png" alt="Google Icon"></a></li>
-      <li><a href="https://www.linkedin.com/in/euniceschoi"><img src="../imgs/linkedin.png" alt="Linked In Icon"></a></li>
-      <li><a href="mailto:euniceschoi93@gmail.com"><img src="../imgs/email.png" alt="GitHub Icon"></a></li>
-    </ul>
-  </footer>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 

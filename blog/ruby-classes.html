@@ -1,123 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>DBC Blogs</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/eachblog.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eunice Choi - About</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
-  <header>
-    <div class="banner">
-      <img style="width:180px; height:170px" src= "../imgs/flowerbanner2.png" alt="Image of my name">
-    </div>
-    <nav>
-      <a href="../index.html">HOME</a>
-      <a href="../about-me.html">ABOUT ME</a>
-      <a href="../blog.html">BLOG</a>
-      <a href="../portfolio.html">PORTFOLIO</a>
-      <a href="../contact.html">CONTACT</a>
+
+    <div class="brand">Eunice Choi</div>
+    <div class="address-bar">Web Development Student | Dev BootCamp SF </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="../blog.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
-  </header>
 
-  <div class="blog-container" alink="#55EEA1">
-    <h1>Ruby Fundamentals</h1>
-    <h2>Ruby Classes</h2>
-    <h4>September 28, 2015</h4>
-      <p>Do you remember how Ruby is an object-oriented language? The ability to create classes and objects allows Ruby to be very powerful. Classes are the basic "templates" from which objects are created. Objects are pretty much all the variables, functions, and data collection structures that we know. A great example would be a hash. Creating a new hash is actually creating a new instance of the class Hash. In fact, classes are objects, each an instance of the class Class! Classes are useful because they allow you to create variables and methods for the resulting object of each instance.
-      </p>
-      <p>
-      Let's create a class together. Say that you want to build a class that returns some valuable information about each song in your party playlist. Remember that class names start with an uppercase letter:
-      </p>
-      <pre>
-        class Song
-          def initialize(name, artist, genre)
-            @name     = name
-            @artist   = artist
-            @genre    = genre
-          end
-        end
-      </pre>
-      <p>
-       I went ahead and inserted the first method for our class: def initialize. Initialize is a special Ruby method that allows you to pass in parameters when you call a new instance of the class. To create a new Song object you may type this in your irb:
-      </p>
-      <pre>
-        >>first_song = Song.new("Hotline Bling", "Drake", "Hip Hop & Rap")
-      </pre>
-      <p>
-        You can also see that I set each parameter to a variable with an @ sign in front of it. These are called instance variables. Whenever I create a new instance of the class Song, I am creating a new object that represents a different song. Therefore, we need each of our Song objects to hold its own song title, artist, and genre. To do this, we need to store these as instance variables. Think of it like each song having its own ID. Instance variables also work across methods within the same class. Now, let's add some more code:
-      </p>
-      <pre>
-        class Song
-          def initialize(name, artist, genre)
-            @name     = name
-            @artist   = artist
-            @genre    = genre
-          end
+     <div class="container">
 
-          def name
-            @name
-          end
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Ruby
+                        <strong>Classes</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <!-- <img class="img-responsive img-border img-full" src="img/slide-1.jpg" alt=""> -->
+                        <small>September 28, 2015</small>
+                     <p>Do you remember how Ruby is an object-oriented language? The ability to create classes and objects allows Ruby to be very powerful. Classes are the basic "templates" from which objects are created. Objects are pretty much all the variables, functions, and data collection structures that we know. A great example would be a hash. Creating a new hash is actually creating a new instance of the class Hash. In fact, classes are objects, each an instance of the class Class! Classes are useful because they allow you to create variables and methods for the resulting object of each instance.
+                      </p>
+                      <p>
+                      Let's create a class together. Say that you want to build a class that returns some valuable information about each song in your party playlist. Remember that class names start with an uppercase letter:
+                      </p>
+                      <pre>
+                        class Song
+                          def initialize(name, artist, genre)
+                            @name     = name
+                            @artist   = artist
+                            @genre    = genre
+                          end
+                        end
+                      </pre>
+                      <p>
+                       I went ahead and inserted the first method for our class: def initialize. Initialize is a special Ruby method that allows you to pass in parameters when you call a new instance of the class. To create a new Song object you may type this in your irb:
+                      </p>
+                      <pre>
+                        >>first_song = Song.new("Hotline Bling", "Drake", "Hip Hop & Rap")
+                      </pre>
+                      <p>
+                        You can also see that I set each parameter to a variable with an @ sign in front of it. These are called instance variables. Whenever I create a new instance of the class Song, I am creating a new object that represents a different song. Therefore, we need each of our Song objects to hold its own song title, artist, and genre. To do this, we need to store these as instance variables. Think of it like each song having its own ID. Instance variables also work across methods within the same class. Now, let's add some more code:
+                      </p>
+                      <pre>
+                        class Song
+                          def initialize(name, artist, genre)
+                            @name     = name
+                            @artist   = artist
+                            @genre    = genre
+                          end
 
-          def artist
-            @artist
-          end
+                          def name
+                            @name
+                          end
 
-          def genre
-            @genre
-          end
-        end
-      </pre>
-      <p>
-        Here are three new methods for our class Song. Each method returns one of the three parameters. Simple, right? Now, see this:
-      </p>
-      <pre>
-        class Song
-          attr_reader :name
-          attr_reader :artist
-          attr_reader :genre
+                          def artist
+                            @artist
+                          end
 
-          def initialize(name, artist, genre)
-            @name     = name
-            @artist   = artist
-            @genre    = genre
-          end
-        end
-      </pre>
-      <p>
-        Believe it or not, this code does the exact same thing as the one before. Attribute readers allow you to "get" a variable from your class. So instead of tediously writing blocks of code that solely have the function of returning a variable, you can simply set that variable as an attr_reader and get it directly! To return the artist of your first song, you would type:
-      </p>
-      <pre>
-        >> first_song.artist
-      </pre>
-      <p>
-        There are also attribute writers, which allow you to "set" or change a variable. In this case, we won't use them since it is very unlikely that a song name, artist, or genre would change. Attribute accessors can do the job of attribute writers AND attribute readers. They should be used when only necessary.
-      <p>
-      <p>
-        I hope you've learned a thing or two about Ruby classes. Classes are powerful tools in object oriented languages and are used for practically creating everything that you use in Ruby.
-      </p>
-  </div>
+                          def genre
+                            @genre
+                          end
+                        end
+                      </pre>
+                      <p>
+                        Here are three new methods for our class Song. Each method returns one of the three parameters. Simple, right? Now, see this:
+                      </p>
+                      <pre>
+                        class Song
+                          attr_reader :name
+                          attr_reader :artist
+                          attr_reader :genre
 
-  <!-- <aside>
-      <h1>Other Entries</h1>
-        <ul>
-          <li>
-            <a href="/t1-git-blog.html">Git and GitHub</a>
-          </li>
-        </ul>
-  </aside> -->
+                          def initialize(name, artist, genre)
+                            @name     = name
+                            @artist   = artist
+                            @genre    = genre
+                          end
+                        end
+                      </pre>
+                      <p>
+                        Believe it or not, this code does the exact same thing as the one before. Attribute readers allow you to "get" a variable from your class. So instead of tediously writing blocks of code that solely have the function of returning a variable, you can simply set that variable as an attr_reader and get it directly! To return the artist of your first song, you would type:
+                      </p>
+                      <pre>
+                        >> first_song.artist
+                      </pre>
+                      <p>
+                        There are also attribute writers, which allow you to "set" or change a variable. In this case, we won't use them since it is very unlikely that a song name, artist, or genre would change. Attribute accessors can do the job of attribute writers AND attribute readers. They should be used when only necessary.
+                      <p>
+                      <p>
+                        I hope you've learned a thing or two about Ruby classes. Classes are powerful tools in object oriented languages and are used for practically creating everything that you use in Ruby.
+                      </p>
+                </div>
+                    <hr>
+                </div>
 
+                <div class="col-lg-12 text-center">
+                    <ul class="pager">
+                        <li class="previous"><a href="#">&larr; Older</a>
+                        </li>
+                        <li class="next"><a href="#">Newer &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-  <footer class="bottom">
-    <ul class="soc">
-      <li><a href="https://twitter.com/euniceesc"><img src="../imgs/twitter.png" alt="Twitter Icon"></a></li>
-      <li><a href="https://www.facebook.com/EuniceSChoi"><img src="../imgs/facebook.png" alt="Facebook Icon"></a></li>
-      <li><a href="https://plus.google.com/u/0/113732345844394468529"><img src="../imgs/googleplus.png" alt="Google Icon"></a></li>
-      <li><a href="https://www.linkedin.com/in/euniceschoi"><img src="../imgs/linkedin.png" alt="Linked In Icon"></a></li>
-      <li><a href="mailto:euniceschoi93@gmail.com"><img src="../imgs/email.png" alt="GitHub Icon"></a></li>
-    </ul>
-  </footer>
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <ul class="soc">
+                        <li><a href="https://twitter.com/euniceesc"><img src="../img/twitter.png" alt="Twitter Icon"></a></li>
+                        <li><a href="https://www.facebook.com/EuniceSChoi"><img src="../img/facebook.png" alt="Facebook Icon"></a></li>
+                        <li><a href="https://plus.google.com/u/0/113732345844394468529"><img src="../img/googleplus.png" alt="Google Icon"></a></li>
+                        <li><a href="https://www.linkedin.com/in/euniceschoi"><img src="../img/linkedin.png" alt="Linked In Icon"></a></li>
+                        <li><a href="mailto:euniceschoi93@gmail.com"><img src="../img/email.png" alt="GitHub Icon"></a></li>
+                      </ul>
+                    <p><!-- Copyright &copy; Eunice Choi 2015 --></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 

@@ -1,125 +1,204 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <title>DBC Blogs</title>
-  <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/eachblog.css">
-  </head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eunice Choi - About</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
 
 <body>
-  <header>
-    <div class="banner">
-      <img style="width:180px; height:170px" src= "../imgs/flowerbanner2.png" alt="Image of my name">
-    </div>
 
-    <nav>
-      <a href="../index.html">HOME</a>
-      <a href="../about-me.html">ABOUT ME</a>
-      <a href="../blog.html">BLOG</a>
-      <a href="../portfolio.html">PORTFOLIO</a>
-      <a href="../contact.html">CONTACT</a>
+    <div class="brand">Eunice Choi</div>
+    <div class="address-bar">Web Development Student | Dev BootCamp SF </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../blog1.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="../blog1.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
-  </header>
+
+     <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>[Arrays] vs. {Hashes}</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <!-- <img class="img-responsive img-border img-full" src="img/slide-1.jpg" alt=""> -->
+                        <small>September 13, 2015</small>
+                     <p>
+                      Which do you think is harder: learning Ruby or teaching a class of kindergarteners? I think they are equally challenging, but in this blog, I'd like you to do both at once in order to understand arrays and hashes.
+                    </p>
+                    <p>
+                      Arrays and hashes are both <b>indexed collections</b>. Collection means that they can store objects such as strings and integers. Indexed means that they have "keys" to access each of their stored objects. Like a key to a classroom door, you can only access an object in an array or a hash with its indexed key! Now let's unlock the door to your classroom and prepare for your first kindergarten lesson. First thing on the list: get to know your students' names.
+                    </p>
+                    <hr>
+                    <h3>[Arrays]</h3>
+                    <p>
+                      Let's create an array with your class roster. You could call your array "students" and store all of your students' names. It would look  something like this:
+
+                      <pre>
+                      students = ['James', 'Peter', 'Emily', 'Sam', 'Brian', 'Karen', 'Claire']
+                      </pre>
+
+                      Remember how I said that arrays and hashes are indexed? Arrays are unique in that they are integer-indexed, starting with 0. In the array above, an index of 0 would indicate James. An index of 1 would represent Peter, an index of 2 would represent Emily, so on and so forth. To access each element in your array, you need to type the array name next to the index integer in brackets. For instance, you would type the following code to access the first name on the list:
+
+                      <pre>
+                        students[0]
+                      </pre>
 
 
-  <div class="blog-container">
-    <h1>Ruby Fundamentals</h1>
-    <h2>[Arrays] vs. {Hashes}</h2>
-    <h4>September 13, 2015</h4>
+                      Arrays have many useful built in methods. For instance, you could alphabetize the students names by using:
+                      <pre> students.sort </pre> or even find the number of students in your class by typing: <pre> students.count </pre>. You can even have empty arrays!
+                      <pre>students = []</pre>
+                    </p>
+                    <hr>
+                    <h3>{Hashes}</h3>
+                    <p>Now that you are familiar with your students' names, why don't we assign your students their cubbies?</p>
 
-    <p>
-      Which do you think is harder: learning Ruby or teaching a class of kindergarteners? I think they are equally challenging, but in this blog, I'd like you to do both at once in order to understand arrays and hashes.
-    </p>
-    <p>
-      Arrays and hashes are both <b>indexed collections</b>. Collection means that they can store objects such as strings and integers. Indexed means that they have "keys" to access each of their stored objects. Like a key to a classroom door, you can only access an object in an array or a hash with its indexed key! Now let's unlock the door to your classroom and prepare for your first kindergarten lesson. First thing on the list: get to know your students' names.
-    </p>
-    <hr>
-    <h3>[Arrays]</h3>
-    <p>
-      Let's create an array with your class roster. You could call your array "students" and store all of your students' names. It would look  something like this:
+                    <img style="width:500px; height:400px" src="http://3.bp.blogspot.com/-2YPmEGDH3V8/UCaDt7P9AEI/AAAAAAAAAJo/wvbDusib6Uo/s1600/cubbies.JPG">
+                    <p>
+                      Since your cubbies have number labels on them, why don't we just assign each student a number? Let's create a hash called "cubbies_assignment" to do this job:
+                          <pre>
+                          cubbies_assignment = {
+                            1 => 'James',
+                            2 => 'Peter',
+                            3 => 'Emily',
+                            4 => 'Sam',
+                            5 => 'Brian',
+                            6 => 'Karen',
+                            7 => 'Claire'
+                          }
+                          </pre>
+                    </p>
+                    <p>
+                      As you can see, hashes are similar to arrays in that they store objects. The hash above stores your students' names along with their cubby numbers. So what makes hashes so different from arrays? One thing for sure, you can see that hashes use {braces} in stead of [brackets]. They also hold two objects for every entry: a key and a value. Earlier, arrays were integer-indexed starting from 0. Hashes, on the other hand, are indexed by the key you label them with. The left side of the "=>"" represents the key while the right side represents the value:
+                      <pre> key => value </pre> In order to index each value you would type:
 
-      <pre>
-      students = ['James', 'Peter', 'Emily', 'Sam', 'Brian', 'Karen', 'Claire']
-      </pre>
+                      <pre>
+                        hash_name[key]
+                      </pre>
+                      To index Karen, you would input:
+                      <pre>
+                        cubbies_assignment[6]
+                      </pre>
+                    <p>
+                      Like arrays, hashes also have great build-in methods. To print just the keys of your hash, you can type:
+                      <pre>cubbies_assignment.keys</pre>
+                      => [1, 2, 3, 4, 5, 6, 7]
+                    </p>
+                    <p>To get the number of cubbies, you could type:
+                      <pre> cubbies_assignment.length</pre>
+                    </p>
+                    <p>What if you want to assign a new student a cubby? You could add to an existing hash by typing:
+                      <pre>hash[:8] = 'Diane'</pre>
+                    </p>
+                    <hr>
+                    <p>
+                      In your classroom, hashes and arrays were used for storing important data: students' names and cubby numbers. In programming, they are used in the same way. Arrays are useful for storing values that can be accessed through "implied" keys from 0 up. Hashes are useful for look up actions. For instance, you are able look up a student's name by typing in his or her cubby number. Both arrays and hashes are powerful tools, and I hope you found this blog helpful for understanding their uses!
+                    </p>
+                </div>
+                    <hr>
+                </div>
 
-      Remember how I said that arrays and hashes are indexed? Arrays are unique in that they are integer-indexed, starting with 0. In the array above, an index of 0 would indicate James. An index of 1 would represent Peter, an index of 2 would represent Emily, so on and so forth. To access each element in your array, you need to type the array name next to the index integer in brackets. For instance, you would type the following code to access the first name on the list:
+                <div class="col-lg-12 text-center">
+                    <ul class="pager">
+                        <li class="previous"><a href="#">&larr; Older</a>
+                        </li>
+                        <li class="next"><a href="#">Newer &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-      <pre>
-        students[0]
-      </pre>
+    </div>
+    <!-- /.container -->
 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <ul class="soc">
+                        <li><a href="https://twitter.com/euniceesc"><img src="../img/twitter.png" alt="Twitter Icon"></a></li>
+                        <li><a href="https://www.facebook.com/EuniceSChoi"><img src="../img/facebook.png" alt="Facebook Icon"></a></li>
+                        <li><a href="https://plus.google.com/u/0/113732345844394468529"><img src="../img/googleplus.png" alt="Google Icon"></a></li>
+                        <li><a href="https://www.linkedin.com/in/euniceschoi"><img src="../img/linkedin.png" alt="Linked In Icon"></a></li>
+                        <li><a href="mailto:euniceschoi93@gmail.com"><img src="../img/email.png" alt="GitHub Icon"></a></li>
+                      </ul>
+                    <p><!-- Copyright &copy; Eunice Choi 2015 --></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-      Arrays have many useful built in methods. For instance, you could alphabetize the students names by using:
-      <pre> students.sort </pre> or even find the number of students in your class by typing: <pre> students.count </pre>. You can even have empty arrays!
-      <pre>students = []</pre>
-    </p>
-    <hr>
-    <h3>{Hashes}</h3>
-    <p>Now that you are familiar with your students' names, why don't we assign your students their cubbies?</p>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-    <img style="width:500px; height:400px" src="http://3.bp.blogspot.com/-2YPmEGDH3V8/UCaDt7P9AEI/AAAAAAAAAJo/wvbDusib6Uo/s1600/cubbies.JPG">
-    <p>
-      Since your cubbies have number labels on them, why don't we just assign each student a number? Let's create a hash called "cubbies_assignment" to do this job:
-          <pre>
-          cubbies_assignment = {
-            1 => 'James',
-            2 => 'Peter',
-            3 => 'Emily',
-            4 => 'Sam',
-            5 => 'Brian',
-            6 => 'Karen',
-            7 => 'Claire'
-          }
-          </pre>
-    </p>
-    <p>
-      As you can see, hashes are similar to arrays in that they store objects. The hash above stores your students' names along with their cubby numbers. So what makes hashes so different from arrays? One thing for sure, you can see that hashes use {braces} in stead of [brackets]. They also hold two objects for every entry: a key and a value. Earlier, arrays were integer-indexed starting from 0. Hashes, on the other hand, are indexed by the key you label them with. The left side of the "=>"" represents the key while the right side represents the value:
-      <pre> key => value </pre> In order to index each value you would type:
-
-      <pre>
-        hash_name[key]
-      </pre>
-      To index Karen, you would input:
-      <pre>
-        cubbies_assignment[6]
-      </pre>
-    <p>
-      Like arrays, hashes also have great build-in methods. To print just the keys of your hash, you can type:
-      <pre>cubbies_assignment.keys</pre>
-      => [1, 2, 3, 4, 5, 6, 7]
-    </p>
-    <p>To get the number of cubbies, you could type:
-      <pre> cubbies_assignment.length</pre>
-    </p>
-    <p>What if you want to assign a new student a cubby? You could add to an existing hash by typing:
-      <pre>hash[:8] = 'Diane'</pre>
-    </p>
-    <hr>
-    <p>
-      In your classroom, hashes and arrays were used for storing important data: students' names and cubby numbers. In programming, they are used in the same way. Arrays are useful for storing values that can be accessed through "implied" keys from 0 up. Hashes are useful for look up actions. For instance, you are able look up a student's name by typing in his or her cubby number. Both arrays and hashes are powerful tools, and I hope you found this blog helpful for understanding their uses!
-    </p>
-
-
-  </div>
-
-  <!-- <aside>
-    <h1>Other Entries</h1>
-      <ul>
-        <li>
-          <a href="/c1-chefs-kitchen.html">My Impression of DBC Thus Far</a>
-        </li>
-  </aside> -->
-
-  <footer class="bottom">
-      <ul class="soc">
-        <li><a href="https://twitter.com/euniceesc"><img src="../imgs/twitter.png" alt="Twitter Icon"></a></li>
-        <li><a href="https://www.facebook.com/EuniceSChoi"><img src="../imgs/facebook.png" alt="Facebook Icon"></a></li>
-        <li><a href="https://plus.google.com/u/0/113732345844394468529"><img src="../imgs/googleplus.png" alt="Google Icon"></a></li>
-        <li><a href="https://www.linkedin.com/in/euniceschoi"><img src="../imgs/linkedin.png" alt="Linked In Icon"></a></li>
-        <li><a href="mailto:euniceschoi93@gmail.com"><img src="../imgs/email.png" alt="GitHub Icon"></a></li>
-      </ul>
-  </footer>
-
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 

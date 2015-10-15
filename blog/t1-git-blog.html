@@ -1,62 +1,141 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <title>DBC Blogs</title>
-  <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/eachblog.css">
-  </head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eunice Choi - About</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
 
 <body>
-  <header>
-    <div class="banner">
-      <img style="width:180px; height:170px" src= "../imgs/flowerbanner2.png" alt="Image of my name">
-    </div>
 
-    <nav>
-      <a href="../index.html">HOME</a>
-      <a href="../about-me.html">ABOUT ME</a>
-      <a href="../blog.html">BLOG</a>
-      <a href="../portfolio.html">PORTFOLIO</a>
-      <a href="../contact.html">CONTACT</a>
+    <div class="brand">Eunice Choi</div>
+    <div class="address-bar">Web Development Student | Dev BootCamp SF </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../blog1.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="../blog.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
-  </header>
 
+     <div class="container">
 
-  <div class="blog-container">
-    <h1>Git and GitHub</h1>
-    <h2>Saviors of Version Control</h2>
-    <h4>August 24, 2015</h4>
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Git and GitHub</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <!-- <img class="img-responsive img-border img-full" src="img/slide-1.jpg" alt=""> -->
+                        <small>August 24, 2015</small>
+                     <p>
+                        Imagine you and a group coding away in order to create a beautiful, meaningful project when all of a sudden, a member accidentally overwrites a file. Now this file is lost and can never be retrieved. Version control helps prevent accidents like this! A version control system allows you to record snapshots of changes to a file or directory so that you can look back to specific versions in the future. Every change made is tracked, along with who made the change and why. You can think about it like a saving point in a video game. Version control is important to developers because you can always go back to the last saved version of your work if you make any mistakes or even accidentally delete your entire project. Version control not only helps the individual but it also helps with group projects. Group members working on a single project can use source control to communicate with eachother and make changes with confidence. They can also see who made a change, where, and why.
 
-    <p>
-        Imagine you and a group coding away in order to create a beautiful, meaningful project when all of a sudden, a member accidentally overwrites a file. Now this file is lost and can never be retrieved. Version control helps prevent accidents like this! A version control system allows you to record snapshots of changes to a file or directory so that you can look back to specific versions in the future. Every change made is tracked, along with who made the change and why. You can think about it like a saving point in a video game. Version control is important to developers because you can always go back to the last saved version of your work if you make any mistakes or even accidentally delete your entire project. Version control not only helps the individual but it also helps with group projects. Group members working on a single project can use source control to communicate with eachother and make changes with confidence. They can also see who made a change, where, and why.
+                    </p>
+                    <p>
+                          Git and GitHub are two very prominent forms of version control for programmers. Although they serve very similar purposes, Git and GitHub are not the same thing. Git is a version control software that is downloaded and lives locally on your computer. GitHub is also a form of version control, but lives remotely on the internet. Think of Git as a word processor and think of GitHub as Google Docs. Word processors only allows the user to access and edit your work locally, while Google Docs allow a team of individuals to simultaneously edit and improve a single project. You can store and access your work online, on GitHub, but only if you expicitly send it there, via the command "git push." Using GitHub also allows other programmers to see and use your code in their work, saving the entire programming community a lot of time. GitHub is amazing because it allows people to share their work and collaborate together on giant projects.
+                    </p>
+                </div>
+                    <hr>
+                </div>
 
-    </p>
-    <p>
-          Git and GitHub are two very prominent forms of version control for programmers. Although they serve very similar purposes, Git and GitHub are not the same thing. Git is a version control software that is downloaded and lives locally on your computer. GitHub is also a form of version control, but lives remotely on the internet. Think of Git as a word processor and think of GitHub as Google Docs. Word processors only allows the user to access and edit your work locally, while Google Docs allow a team of individuals to simultaneously edit and improve a single project. You can store and access your work online, on GitHub, but only if you expicitly send it there, via the command "git push." Using GitHub also allows other programmers to see and use your code in their work, saving the entire programming community a lot of time. GitHub is amazing because it allows people to share their work and collaborate together on giant projects.
-    </p>
+                <div class="col-lg-12 text-center">
+                    <ul class="pager">
+                        <li class="previous"><a href="#">&larr; Older</a>
+                        </li>
+                        <li class="next"><a href="#">Newer &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-  </div>
+    </div>
+    <!-- /.container -->
 
-  <!-- <aside>
-    <h1>Other Entries</h1>
-      <ul>
-        <li>
-          <a href="/c1-chefs-kitchen.html">My Impression of DBC Thus Far</a>
-        </li>
-  </aside> -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <ul class="soc">
+                        <li><a href="https://twitter.com/euniceesc"><img src="../img/twitter.png" alt="Twitter Icon"></a></li>
+                        <li><a href="https://www.facebook.com/EuniceSChoi"><img src="../img/facebook.png" alt="Facebook Icon"></a></li>
+                        <li><a href="https://plus.google.com/u/0/113732345844394468529"><img src="../img/googleplus.png" alt="Google Icon"></a></li>
+                        <li><a href="https://www.linkedin.com/in/euniceschoi"><img src="../img/linkedin.png" alt="Linked In Icon"></a></li>
+                        <li><a href="mailto:euniceschoi93@gmail.com"><img src="../img/email.png" alt="GitHub Icon"></a></li>
+                      </ul>
+                    <p><!-- Copyright &copy; Eunice Choi 2015 --></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-  <footer class="bottom">
-      <ul class="soc">
-        <li><a href="https://twitter.com/euniceesc"><img src="../imgs/twitter.png" alt="Twitter Icon"></a></li>
-        <li><a href="https://www.facebook.com/EuniceSChoi"><img src="../imgs/facebook.png" alt="Facebook Icon"></a></li>
-        <li><a href="https://plus.google.com/u/0/113732345844394468529"><img src="../imgs/googleplus.png" alt="Google Icon"></a></li>
-        <li><a href="https://www.linkedin.com/in/euniceschoi"><img src="../imgs/linkedin.png" alt="Linked In Icon"></a></li>
-        <li><a href="mailto:euniceschoi93@gmail.com"><img src="../imgs/email.png" alt="GitHub Icon"></a></li>
-      </ul>
-  </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
 </html>
-

@@ -1,77 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>DBC Blogs</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/eachblog.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eunice Choi - About</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
-  <header>
-    <div class="banner">
-      <img style="width:180px; height:170px" src= "../imgs/flowerbanner2.png" alt="Image of my name">
-    </div>
-    <nav>
-      <a href="../index.html">HOME</a>
-      <a href="../about-me.html">ABOUT ME</a>
-      <a href="../blog.html">BLOG</a>
-      <a href="../portfolio.html">PORTFOLIO</a>
-      <a href="../contact.html">CONTACT</a>
+
+    <div class="brand">Eunice Choi</div>
+    <div class="address-bar">Web Development Student | Dev BootCamp SF </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../blog1.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="../blog1.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
-  </header>
 
-  <div class="blog-container">
-    <h1>Enumerable Methods</h1>
-    <h2>Enumerable#map</h2>
-    <h4>September 20, 2015</h4>
+     <div class="container">
 
-      <p>
-        If you look up the definition of <b>enumerate</b> on Google, you will see that one of the definitions is: <b>"to mention (a number of things) one by one"</b>.
-      </p>
-      <p>
-        In Ruby, an <b>enumerator</b> is a tool that is used to access each item, or element, in a collection, such as an array or hash.
-      </p>
-      <p>
-        <b>Enumerable</b> is a Ruby module, which exists in the Array class. You may have heard of the Enumerable module being a mixin. This simply means that it is "mixed in" or included in the Array class, allowing its instance variables to be used as available methods in the class.
-      </p>
-      <p>
-        <b>Enumerables</b> provide a variety of <b>enumerators</b> methods, such as <b>map</b>, to help with iteration. For a class to use Enumerables, it must define an #each method. For example, the Array class, which uses Enumerables, defines the <b> each </b> method. This allows you to perform enumerators as you sort through each element in an array.
-      </p>
-      <hr>
-      <h3>Enumerable#map</h3>
-      <p><b>.map</b> is an Enumerable method that allows you to return a new array with the results from iterating through a list or some sort. Let's say that you want to sort through the given range of a number and multiply each integer in the range by 2. For instance, you have a given range 1..3, which includes the integers: 1, 2, and 3. Multiplying each integer by 2 would return: 2, 4, and 6.
-      </p>
-      <p>We can't use .each to iterate through the range since the integers within the range is not in an array. What you CAN use is .map:</p>
-      <pre>(1..3).map { |i| i*2 }      #=> [2, 4, 6]
-      </pre>
-      <p>Writing .map is similar to writing the .each method. You add <b>.map</b> next to the list you want to sort through and then write what actions you want to perform to each element in curly braces. The results are then inserted into a new array!</p>
-      <p>Enumerable#map is also used to sort through arrays themselves. This is useful when you want to create a new array with the results from iteration. You might wonder why we just can't use.each? This is because .each can run through an array and pass in each element as an argument, but it does not save the results into a new array. </p>
-      <pre>[1, 2,3].map { |i| i*2 }    #=> [2, 4, 6]
-      </pre>
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Enumerable
+                        <strong>#map</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <!-- <img class="img-responsive img-border img-full" src="img/slide-1.jpg" alt=""> -->
+                        <small>September 20, 2015</small>
+                     <p>
+                      If you look up the definition of <b>enumerate</b> on Google, you will see that one of the definitions is: <b>"to mention (a number of things) one by one"</b>.
+                    </p>
+                    <p>
+                      In Ruby, an <b>enumerator</b> is a tool that is used to access each item, or element, in a collection, such as an array or hash.
+                    </p>
+                    <p>
+                      <b>Enumerable</b> is a Ruby module, which exists in the Array class. You may have heard of the Enumerable module being a mixin. This simply means that it is "mixed in" or included in the Array class, allowing its instance variables to be used as available methods in the class.
+                    </p>
+                    <p>
+                      <b>Enumerables</b> provide a variety of <b>enumerators</b> methods, such as <b>map</b>, to help with iteration. For a class to use Enumerables, it must define an #each method. For example, the Array class, which uses Enumerables, defines the <b> each </b> method. This allows you to perform enumerators as you sort through each element in an array.
+                    </p>
+                    <hr>
+                    <h3>Enumerable#map</h3>
+                    <p><b>.map</b> is an Enumerable method that allows you to return a new array with the results from iterating through a list or some sort. Let's say that you want to sort through the given range of a number and multiply each integer in the range by 2. For instance, you have a given range 1..3, which includes the integers: 1, 2, and 3. Multiplying each integer by 2 would return: 2, 4, and 6.
+                    </p>
+                    <p>We can't use .each to iterate through the range since the integers within the range is not in an array. What you CAN use is .map:</p>
+                    <pre>(1..3).map { |i| i*2 }      #=> [2, 4, 6]
+                    </pre>
+                    <p>Writing .map is similar to writing the .each method. You add <b>.map</b> next to the list you want to sort through and then write what actions you want to perform to each element in curly braces. The results are then inserted into a new array!</p>
+                    <p>Enumerable#map is also used to sort through arrays themselves. This is useful when you want to create a new array with the results from iteration. You might wonder why we just can't use.each? This is because .each can run through an array and pass in each element as an argument, but it does not save the results into a new array. </p>
+                    <pre>[1, 2,3].map { |i| i*2 }    #=> [2, 4, 6]
+                    </pre>
+                </div>
+                    <hr>
+                </div>
 
+                <div class="col-lg-12 text-center">
+                    <ul class="pager">
+                        <li class="previous"><a href="#">&larr; Older</a>
+                        </li>
+                        <li class="next"><a href="#">Newer &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-  </div>
+    </div>
+    <!-- /.container -->
 
-  <!-- <aside>
-      <h1>Other Entries</h1>
-        <ul>
-          <li>
-            <a href="/t1-git-blog.html">Git and GitHub</a>
-          </li>
-        </ul>
-  </aside> -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <ul class="soc">
+                        <li><a href="https://twitter.com/euniceesc"><img src="../img/twitter.png" alt="Twitter Icon"></a></li>
+                        <li><a href="https://www.facebook.com/EuniceSChoi"><img src="../img/facebook.png" alt="Facebook Icon"></a></li>
+                        <li><a href="https://plus.google.com/u/0/113732345844394468529"><img src="../img/googleplus.png" alt="Google Icon"></a></li>
+                        <li><a href="https://www.linkedin.com/in/euniceschoi"><img src="../img/linkedin.png" alt="Linked In Icon"></a></li>
+                        <li><a href="mailto:euniceschoi93@gmail.com"><img src="../img/email.png" alt="GitHub Icon"></a></li>
+                      </ul>
+                    <p><!-- Copyright &copy; Eunice Choi 2015 --></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-  <footer class="bottom">
-    <ul class="soc">
-      <li><a href="https://twitter.com/euniceesc"><img src="../imgs/twitter.png" alt="Twitter Icon"></a></li>
-      <li><a href="https://www.facebook.com/EuniceSChoi"><img src="../imgs/facebook.png" alt="Facebook Icon"></a></li>
-      <li><a href="https://plus.google.com/u/0/113732345844394468529"><img src="../imgs/googleplus.png" alt="Google Icon"></a></li>
-      <li><a href="https://www.linkedin.com/in/euniceschoi"><img src="../imgs/linkedin.png" alt="Linked In Icon"></a></li>
-      <li><a href="mailto:euniceschoi93@gmail.com"><img src="../imgs/email.png" alt="GitHub Icon"></a></li>
-    </ul>
-  </footer>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
