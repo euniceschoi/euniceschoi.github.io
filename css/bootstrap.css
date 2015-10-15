@@ -203,6 +203,7 @@ th {
   a,
   a:visited {
     text-decoration: underline;
+
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -1105,12 +1106,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: white;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: white;
   text-decoration: underline;
 }
 a:focus {
@@ -1346,7 +1347,7 @@ mark,
   color: #777;
 }
 .text-primary {
-  color: #337ab7;
+  color: white;
 }
 a.text-primary:hover {
   color: #286090;
@@ -1377,7 +1378,7 @@ a.text-danger:hover {
 }
 .bg-primary {
   color: #fff;
-  background-color: #337ab7;
+  background-color: white;
 }
 a.bg-primary:hover {
   background-color: #286090;

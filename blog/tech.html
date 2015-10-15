@@ -94,12 +94,7 @@
                     <p>
                       If you think about text, each letter and string is a character. When using regular expressions, you are writing pattern to match a certain sequence of characters. In order to match email addresses, for example, you would be writing a pattern that matches the ____@____.com pattern. Regular In programming, a regular expression, or "regex," is a sequence of symbols that match characters. The simplest form of a regex uses the exact characters to match as is. Regexes also match the first case found:
                     </p>
-                    <pre>
-
-                        <u>Regex</u>  <u>Matches</u>
-                        abc    <b>abc</b>abcabc
-                        234    1<b>234</b>5
-                    </pre>
+                    <pre><u>Regex</u>  <u>Matches</u><br>abc    <b>abc</b>abcabc<br>234    1<b>234</b>5</pre>
                     <p>
                       If you want to match several characters, you can use quantifiers. Let's look at some basics:
                     </p>
@@ -108,46 +103,17 @@
                       <li>? matches zero or one</li>
                       <li>+ matches one or more</li>
                     </ul>
-                    <pre>
-                        <u>Regex</u> <u>Matches</u>
-                        23*4  1<b>24</b>5, 1<b>234</b>5, 1<b>2334</b>5
-                        23?4  1<b>24</b>5, 1<b>234</b>5
-                        23+4  1<b>234</b>5, 1<b>2334</b>5
-                    </pre>
+                    <pre><u>Regex</u> <u>Matches</u><br>23*4  1<b>24</b>5, 1<b>234</b>5, 1<b>2334</b>5<br>23?4  1<b>24</b>5, 1<b>234</b>5<br>23+4  1<b>234</b>5, 1<b>2334</b>5</pre>
                     <p>
                       Regexes are "greedy" by default as you can see here:
                     </p>
-                    <pre>
-                        <u>Regex</u> <u>Matches</u>
-                        2*    1<b>2222</b>3
-                    </pre>
+                    <pre><u>Regex</u> <u>Matches</u><br>2*    1<b>2222</b>3</pre>
                     <p>
                       Here are some common special characters for building regular expressions:
                     </p>
-                    <pre>
-                      .   The dot matches any single character.
-                      \n  Matches a newline character (or CR+LF combination).
-                      \t  Matches a tab (ASCII 9).
-                      \d  Matches a digit [0-9].
-                      \D  Matches a non-digit.
-                      \w  Matches an alphanumberic character.
-                      \W  Matches a non-alphanumberic character.
-                      \s  Matches a whitespace character.
-                      \S  Matches a non-whitespace character.
-                      \   Use \ to escape special characters. For example, \. matches a dot, and \\
-                          matches a backslash.
-                      ^   Match at the beginning of the input string.
-                      $   Match at the end of the input string.
-                    </pre>
+                    <pre>.   The dot matches any single character.<br>\n  Matches a newline character (or CR+LF combination).<br>\t  Matches a tab (ASCII 9).<br>\d  Matches a digit [0-9].<br>\D  Matches a non-digit.<br>\w  Matches an alphanumberic character.<br>\W  Matches a non-alphanumberic character.<br>\s  Matches a whitespace character.<br>\S  Matches a non-whitespace character.<br>\   Use \ to escape special characters.<br>^   Match at the beginning of the input string.<br>$   Match at the end of the input string.</pre>
                     <p>You can also use character classes to group characters and match any character in that group: </p>
-                    <pre>
-                    [abc]   Match any of a, b, and c.
-                    [a-z]   Match any character between a and z.
-                    [^abc]  A caret ^ at the beginning indicates "not". In this case, match anything
-                            other than a, b, or c.
-                    [+*?.]  Most special characters have no meaning inside the square brackets. This
-                            expression matches any of +, *, ? or the dot.
-                    </pre>
+                    <pre>[abc]   Match any of a, b, and c.<br>[a-z]   Match any character between a and z.<br>[^abc]  A caret ^ at the beginning indicates "not".<br>           In this case, match anything other than a, b, or c.<br>[+*?.]  This expression matches any of +, *, ? or the dot.</pre>
                     <p>
                       There are many more concepts to regular expressions, but this is a good glimpse into the regexes you would use to match strings. Regular Expressions are language independent and used in many different programming environment. They allow programmers to parse and extract data with efficience!
                     </p>
@@ -157,10 +123,10 @@
 
                 <div class="col-lg-12 text-center">
                     <ul class="pager">
-                        <li class="previous"><a href="#">&larr; Older</a>
+                        <li class="previous"><a href="JavaScript.html">&larr; Older</a>
                         </li>
-                        <li class="next"><a href="#">Newer &rarr;</a>
-                        </li>
+                        <!-- <li class="next"><a href="#">Newer &rarr;</a> -->
+                        <!-- </li> -->
                     </ul>
                 </div>
             </div>
