@@ -88,58 +88,55 @@
                 <div class="col-lg-12 text-center">
                     <!-- <img class="img-responsive img-border img-full" src="img/slide-1.jpg" alt=""> -->
                         <small>September 6, 2015</small>
-                     <p>
+                    <br>
+                    <br>
+                    <p>
                       As a CSS novice, I found myself spending hours adjusting the positioning for the containers in my website. None of the book definitions of relative, absolute, fixed, and static positioning really made sense to me until I started playing around them myself, and even then, hours flew by. In this blog, I want to explain CSS positioning in a way that might help clear some confusion for another beginner like me. If you are interested, please keep reading!
-
-                      <figure>
+                    </p>
+                    <figure>
 
                         <a href="http://www.virtuosimedia.com/dev/css/css-rounded-corners-menus"> <img src="http://www.virtuosimedia.com/includes/Files/Uploaded/Images/Articles/Content/css-positioning.jpg"></a>
                         <figcaption>Click Image for Source </figcaption>
-                      </figure>
-                    </p>
+                    </figure>
 
+                    <br>
                     <p>
                       <b>1. Let's start with static positioning:</b>
                     </p>
 
-                    <p>
-                      <pre>.container-1 {
-                            position: static;
-                            }
+                      <pre>.container-1 {<br>   position: static;<br>}
                       </pre>
-
+                    <p>
                       Let's say we were to set container-1's positioning to static. Above is how you would write the CSS code. Static positioning will place the container at its default positioning. Just always remember that static equals default. The container will stay with the normal page flow and not move.
                     </p>
+                    <br>
                     <p>
                       <b>2. Relative Positioning:</b>
                     </p>
+                    <pre>.container-1 {<br> position: relative;<br> top: -100px;<br>    left: -100px;<br>}
+                    </pre>
                     <p>
-                      <pre>.container-1 {
-                            position: relative;
-                            top: -100px;
-                            left: -100px;
-                            }
-                      </pre>
 
                       Now you decided that you want to move container-1 elsewhere. Let's say you want to move it up 100 pixels and to the left 100 pixels. This is when relative positioning comes into play. By setting the position to relative, you are telling your container to move a certain number of pixels from its original position.
                     </p>
+                    <br>
                     <p>
                       <b>3. Absolute Positioning:</b>
                     </p>
-                      <pre>.container-1 {
-                            position: absolute;
-                            top: 0 px;
-                            left: 0 px;
-                            }
-                      </pre>
+                    <pre>.container-1 {<br> position: absolute;<br> top: 0 px;<br>  left: 0 px;<br>}
+                    </pre>
+                    <p>
 
                       Let's say your container is actually the logo of your company, and you want it place in the top left corner of your website. You could use relative positioning, and figure out the number of pixels it would have to move from its original position to be in that corner. However, someone viewing your page through a bigger monitor screen may still not see your logo in the corner. This is when absolute positioning is useful. Absolute positioning will take your container out of the normal flow of the page and position it according to the edges of the entire scrollable page. By assigning the top and left to be 0 px, your container will absolutely ALWAYS be 0 pixels from the top and left of any page, allowing it to be stuck right on the corner. Absolute can be useless when you are not cornering an element since screen sizes vary.
+                    </p>
+                    <br>
                     <p>
                      <b> 4. So what if the parent element position is relative but the child element position is absolute?</b>
                     </p>
                     <p>
                       This will allow you to position the child element absolutely within the parent element. If your child element was an image while the parent element is a container, the image could be placed in the center of the parent element and will always stay in the center of the parent no matter what.
                     </p>
+                    <br>
                     <p>
                       <b>5. Last but not least, Fixed Positioning:</b>
                     </p>

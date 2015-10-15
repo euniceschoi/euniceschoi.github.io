@@ -236,3 +236,28 @@ footer p {
 small{
     color:white;
 }
+
+
+.list > ul{
+    list-style:none;
+    font-size:16px;
+    color:#FF6699;
+    text-align:center;
+}
+
+.col-md-12 > td{
+    text-align:left;
+
+}
+td > pre{
+    border-style:none;
+    background-color: #f9f2f4;
+}
+
+td > p{
+    color:#858585;
+}
+td {
+    padding-left:8px;
+    padding-right:5px;
+}

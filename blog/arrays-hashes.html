@@ -88,74 +88,84 @@
                 <div class="col-lg-12 text-center">
                     <!-- <img class="img-responsive img-border img-full" src="img/slide-1.jpg" alt=""> -->
                         <small>September 13, 2015</small>
+                    <br>
+                    <br>
                      <p>
                       Which do you think is harder: learning Ruby or teaching a class of kindergarteners? I think they are equally challenging, but in this blog, I'd like you to do both at once in order to understand arrays and hashes.
                     </p>
+                    <br>
                     <p>
                       Arrays and hashes are both <b>indexed collections</b>. Collection means that they can store objects such as strings and integers. Indexed means that they have "keys" to access each of their stored objects. Like a key to a classroom door, you can only access an object in an array or a hash with its indexed key! Now let's unlock the door to your classroom and prepare for your first kindergarten lesson. First thing on the list: get to know your students' names.
                     </p>
                     <hr>
-                    <h3>[Arrays]</h3>
+                    <h3 style="color:white">[Arrays]</h3>
+                    <br>
                     <p>
                       Let's create an array with your class roster. You could call your array "students" and store all of your students' names. It would look  something like this:
-
-                      <pre>
-                      students = ['James', 'Peter', 'Emily', 'Sam', 'Brian', 'Karen', 'Claire']
-                      </pre>
-
-                      Remember how I said that arrays and hashes are indexed? Arrays are unique in that they are integer-indexed, starting with 0. In the array above, an index of 0 would indicate James. An index of 1 would represent Peter, an index of 2 would represent Emily, so on and so forth. To access each element in your array, you need to type the array name next to the index integer in brackets. For instance, you would type the following code to access the first name on the list:
-
-                      <pre>
-                        students[0]
-                      </pre>
-
-
-                      Arrays have many useful built in methods. For instance, you could alphabetize the students names by using:
-                      <pre> students.sort </pre> or even find the number of students in your class by typing: <pre> students.count </pre>. You can even have empty arrays!
-                      <pre>students = []</pre>
                     </p>
+                    <pre>students = ['James', 'Peter', 'Emily', 'Sam', 'Brian', 'Karen', 'Claire']
+                    </pre>
+                    <br>
+                    <p>
+                      Remember how I said that arrays and hashes are indexed? Arrays are unique in that they are integer-indexed, starting with 0. In the array above, an index of 0 would indicate James. An index of 1 would represent Peter, an index of 2 would represent Emily, so on and so forth. To access each element in your array, you need to type the array name next to the index integer in brackets. For instance, you would type the following code to access the first name on the list:
+                    </p>
+                    <pre>students[0]</pre>
+                    <br>
+                    <p>
+                      Arrays have many useful built in methods. For instance, you could alphabetize the students names by using:
+                      <pre>students.sort</pre>
+                    </p>
+                    <br>
+                    <p>
+                    or even find the number of students in your class by typing:
+                    </p>
+                    <pre>students.count</pre>.
+                    <p>
+                    You can even have empty arrays!
+                    </p>
+                    <pre>students = []</pre>
+
                     <hr>
-                    <h3>{Hashes}</h3>
+                    <h3 style="color:white">{Hashes}</h3>
+                    <br>
                     <p>Now that you are familiar with your students' names, why don't we assign your students their cubbies?</p>
 
                     <img style="width:500px; height:400px" src="http://3.bp.blogspot.com/-2YPmEGDH3V8/UCaDt7P9AEI/AAAAAAAAAJo/wvbDusib6Uo/s1600/cubbies.JPG">
+                    <br>
+                    <br>
                     <p>
                       Since your cubbies have number labels on them, why don't we just assign each student a number? Let's create a hash called "cubbies_assignment" to do this job:
-                          <pre>
-                          cubbies_assignment = {
-                            1 => 'James',
-                            2 => 'Peter',
-                            3 => 'Emily',
-                            4 => 'Sam',
-                            5 => 'Brian',
-                            6 => 'Karen',
-                            7 => 'Claire'
-                          }
-                          </pre>
                     </p>
+                          <pre>cubbies_assignment = {<br>   1 => 'James',<br>   2 => 'Peter',<br>   3 => 'Emily',<br>   4 => 'Sam',<br>   5 => 'Brian',<br>   6 => 'Karen',<br>   7 => 'Claire'<br>}</pre>
+                    <br>
                     <p>
                       As you can see, hashes are similar to arrays in that they store objects. The hash above stores your students' names along with their cubby numbers. So what makes hashes so different from arrays? One thing for sure, you can see that hashes use {braces} in stead of [brackets]. They also hold two objects for every entry: a key and a value. Earlier, arrays were integer-indexed starting from 0. Hashes, on the other hand, are indexed by the key you label them with. The left side of the "=>"" represents the key while the right side represents the value:
-                      <pre> key => value </pre> In order to index each value you would type:
+                    </p>
+                      <pre>key => value</pre>
+                    <br>
+                    <p>In order to index each value you would type:</p>
 
-                      <pre>
-                        hash_name[key]
-                      </pre>
-                      To index Karen, you would input:
-                      <pre>
-                        cubbies_assignment[6]
-                      </pre>
+                      <pre>hash_name[key]</pre>
+                    <br>
+                      <p>To index Karen, you would input:
+                      </p>
+                      <pre>cubbies_assignment[6]</pre>
+                      <br>
                     <p>
-                      Like arrays, hashes also have great build-in methods. To print just the keys of your hash, you can type:
+                      Like arrays, hashes also have great build-in methods. To print just the keys of your hash, you can type:</p>
                       <pre>cubbies_assignment.keys</pre>
-                      => [1, 2, 3, 4, 5, 6, 7]
-                    </p>
-                    <p>To get the number of cubbies, you could type:
-                      <pre> cubbies_assignment.length</pre>
-                    </p>
-                    <p>What if you want to assign a new student a cubby? You could add to an existing hash by typing:
+                      <pre>=> [1, 2, 3, 4, 5, 6, 7]</pre>
+                    <br>
+
+                    <p>To get the number of cubbies, you could type:</p>
+                      <pre>cubbies_assignment.length</pre>
+                      <br>
+
+                    <p>What if you want to assign a new student a cubby? You could add to an existing hash by typing:</p>
                       <pre>hash[:8] = 'Diane'</pre>
-                    </p>
+
                     <hr>
+                    <br>
                     <p>
                       In your classroom, hashes and arrays were used for storing important data: students' names and cubby numbers. In programming, they are used in the same way. Arrays are useful for storing values that can be accessed through "implied" keys from 0 up. Hashes are useful for look up actions. For instance, you are able look up a student's name by typing in his or her cubby number. Both arrays and hashes are powerful tools, and I hope you found this blog helpful for understanding their uses!
                     </p>

@@ -88,9 +88,12 @@
                 <div class="col-lg-12 text-center">
                     <!-- <img class="img-responsive img-border img-full" src="img/slide-1.jpg" alt=""> -->
                         <small>October 2, 2015</small>
+                    <br>
+                    <br>
                      <p>
                       As programming languages, Ruby and JavaScript are very different from another. They may be able to perform many of the same things, but they are optimal for different uses. JavaScript, for example, is a browser- based language that is useful for the client side. Ruby, on the other hand, is more well suited for the server side. This is probably why Ruby offers many more options for iteration compared to JavaScript. After all, looping isn't very necessary on the browser end.
                     </p>
+                    <br>
                     <p>
                       Here is a list of ways to loop in Ruby:
                     </p>
@@ -104,6 +107,7 @@
                         <li>#each_with_index method</li>
                       </ul>
                     </div>
+                    <br>
                     <p>
                       And, here is a list for JavaScript:
                     </p>
@@ -113,19 +117,21 @@
                       <li>for loops</li>
                     </ul>
                     </div>
+                    <br>
                     <p>
                       As you can see, there are quite many ways to create loops in Ruby. The <i>while</i> statement creates a loop by executing code while a conditional is <i>true</i>:
                     </p>
                     <pre>
                       i = 0
                       while i < 5
-                      p “While looping in Ruby!”
-                      i += 1
-                      end
-                    </pre>
+                        p “While looping in Ruby!”
+                        i += 1
+                      end</pre>
+                    <br>
                     <p>
                       You can see above that the code prints "While looping in Ruby!" <i>while</i> the counter variable we set, i, is less than 5. As long as that is <i>true</i>, i will count up and every time it does, print the statement. An until loop will iterate until a conditional is true and a for loop executes code once for each element in an expression.
                     </p>
+                    <br>
                     <p>
                       Ruby also has several built-in methods that are great for creating loops. The #times method is useful for simply repeating a code a several number of times:
                     </p>
@@ -136,43 +142,28 @@
                         Hello!
                         Hello!
                         Hello!
-                        Hello!
-                    </pre>
+                        Hello!</pre>
+                    <br>
                     <p>
                       Ruby's <i>each </i> and <i>each_with_index</i> methods are useful for looping through data structures.
                     </p>
-                    <pre>
-                      array = [ "Eunice", "Sam", "Sarah" ]
-                      array.each do |x|
-                        puts x
-                      end
-
-                      > Eunice
-                        Sam
-                        Sarah
-                    </pre>
+                    <pre>array = [ "Eunice", "Sam", "Sarah" ]<br>array.each do |x|<br>  puts x<br>end<br><br>> Eunice<br> Sam<br> Sarah</pre>
+                    <br>
                     <p>
                       The each method above goes through each element in the array, which is a name, and puts it on the screen. Each_with_index performs the same thing, except you can also access the index.
                     </p>
+                    <br>
                     <p>
                       In JavaScript, there are for loops and while loops. The while loops work just the way they do in Ruby, but the syntax is different. Here, we print a statement while the condition (num <= 5) is true:
                     </p>
-                    <pre>
-                      var num = 1;
-
-                      while (num <= 5) {
-                      console.log(“While looping in JavaScript!”);
-                      n += 1
-                      }
-                    </pre>
+                    <pre>var num = 1;<br><br>while (num <= 5) {<br> console.log(“While looping in JavaScript!”);<br>    n += 1<br>}</pre>
+                    <br>
                     <p>
                       For loops in JavaScript loops through a code block a number of times. They take 3 statements:
                     </p>
-                    <pre>
-                      for(1 ; 2 ; 3) {
-                        code to execute
-                      }
+                    <pre>for(1 ; 2 ; 3) {<br>   code to execute<br>}
                     </pre>
+                    <br>
                     <div class="list">
                     <ul>
                         <li>1. initiate variable for when to start the loop </li>
@@ -180,14 +171,13 @@
                         <li>3. execute after each loop (usually to increase intial variable)</li>
                     </ul>
                     </div>
-                    <pre>
-                      for (var i = 0; i < 5; i++) {
-                        console.log("For looping in JavaScript!")
-                      }
-                    </pre>
+                    <br>
+                    <pre>for (var i = 0; i < 5; i++) {<br>  console.log("For looping in JavaScript!")<br>}</pre>
+                    <br>
                     <p>
                       The code block above will print "For looping in JavaScript!" 5 times, once for every loop, while i is less than 5. i will increase by 1 after each loop, eventually leading to the condition being false and no longer executing the code.
                     </p>
+                    <hr>
                     <p>
                       As you can see, looping in Ruby mostly differs from looping in JavaScript in terms of the syntax. Ruby also has built in methods that JavaScript does not have. Overall, both langauges can be used to create powerful loops. I hope this gave you some basic knowledge on the two!
                     </p>
