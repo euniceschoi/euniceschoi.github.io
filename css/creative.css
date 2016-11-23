@@ -25,7 +25,7 @@ hr.light {
 }
 
 a {
-    color: #443266;
+    color: #222;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -52,12 +52,19 @@ p {
 }
 
 .bg-primary {
-    background-color: #443266;
+background: rgba(68,50,102,1);
+background: -moz-linear-gradient(top, rgba(68,50,102,1) 0%, rgba(117,96,163,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(68,50,102,1)), color-stop(100%, rgba(117,96,163,1)));
+background: -webkit-linear-gradient(top, rgba(68,50,102,1) 0%, rgba(117,96,163,1) 100%);
+background: -o-linear-gradient(top, rgba(68,50,102,1) 0%, rgba(117,96,163,1) 100%);
+background: -ms-linear-gradient(top, rgba(68,50,102,1) 0%, rgba(117,96,163,1) 100%);
+background: linear-gradient(to bottom, rgba(68,50,102,1) 0%, rgba(117,96,163,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#443266', endColorstr='#7560a3', GradientType=0 );
 }
 
 .bg-dark {
-    color: #fff;
-    background-color: #222;
+    color: #F1F0FF;
+    background-color:#443266;
 }
 
 .text-faded {
@@ -274,7 +281,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: #443266;
+    background: #8C489F;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -399,9 +406,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #00a37a;
+    border-color: #8C489F;
     color: #fff;
-    background-color: #00a37a;
+    background-color: #8C489F;
 }
 
 .btn-primary:active,
@@ -473,4 +480,8 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+.fa {
+    color:#8C489F !important;
 }
